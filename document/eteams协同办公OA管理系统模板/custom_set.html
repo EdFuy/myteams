@@ -1,0 +1,625 @@
+<html lang="en" class="">
+ <head> 
+  <title>客户 - 设置</title> 
+  <meta content="webkit" name="renderer" /> 
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" /> 
+  <meta content="initial-scale=1.0, user-scalable=no" name="viewport" /> 
+  <!-- <link type="text/css" rel="stylesheet" href="css/eteams.ui.css" /> --> 
+  <link href="css/eteams.ui.min.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link type="text/css" rel="stylesheet" href="css/eteams.ui.min.css" /> --> 
+  <!-- <link type="text/css" rel="stylesheet" href="css/plugins.css" /> --> 
+  <link href="css/plugins.min.css?v=1.1" rel="stylesheet" type="text/css" /> 
+  <link href="css/eteams.min1.css?v=1f6c37dde395eb63024a38bc63648cdd" rel="stylesheet" type="text/css" /> 
+  <link href="css/eteams.min2.css?v=1f6c37dde395eb63024a38bc63648cdd" rel="stylesheet" type="text/css" /> 
+  <link href="css/all-crm.min.css" rel="stylesheet" type="text/css" /> 
+  <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+ </head> 
+ <body class=""> 
+  <div id="header">
+   <header class="navigation" id="navigation">
+    <div class="user-panel dropdown dropdown-menu-toggle fl" id="user-panel">
+     <div href="index.html" class="user-avatar fl router">
+      <img src="images/avatar.png" class="j_user-currentAvatar" />
+     </div>
+     <div class="user-menu top-user-menu">
+      <a data-url="/portal" href="/portal" class="dropdown-toggle ds-ib-w router j_user_menu_portal"><p class="user-person "><span class="user-name ellipsis">wyb</span><i class="icon-angle-down"></i><span class="user-nameof hide">的</span></p><p title="天霸牛b" class="user-team ellipsis ">天霸牛b</p></a>
+      <div class="dropdown-user dropdown-div dropdown-shadow clearfix" id="j_dropUser">
+       <div class="clearfix teampanel ">
+        <div class="teams-swich fl j_teams-swich ">
+         <span class="txt fl">切换团队：</span>
+         <div class="e-selectui dropdown fl dropdown-menu-toggle dropdown-gettext">
+          <a class="selectui-result dropdown-toggle ellipsis">天霸牛b<i class="icon-caret-down"></i></a>
+          <ul class="dropdown-menu border-dropdown eui-scroll">
+           <li data-employee-id="4525552697072306457" class=""><a>我的团队1455526970310</a></li>
+           <li data-employee-id="4525670458124580496" class="active"><a>天霸牛b</a></li>
+          </ul>
+         </div>
+        </div>
+        <a class="fr btn btn-sm a-team btn-primary  j_joinOrCreate_dropdown">创建或加入团队</a>
+       </div>
+       <div class="clearfix">
+        <div class="mypanel fl">
+         <div class="avatar">
+          <img src="images/avatar.png" class="j_user-avatar" />
+         </div>
+         <div class="myoption">
+          <a href="index.html" class="btn btn-sm btn-block on j_to-myspace hide router">返回我的工作空间</a>
+          <a href="/feed/unfinish/all" class="btn btn-sm btn-block j_clickhide router">未完成事项</a>
+          <a href="/feed/watched/all" class="btn btn-sm btn-block j_clickhide router">关注事项</a>
+          <a href="/tag/privacy/list" class="btn btn-sm btn-block j_clickhide router">标签</a>
+          <a href="/profile" class="btn btn-sm btn-block j_clickhide router">个人设置</a>
+         </div>
+        </div>
+        <div class="otherspanel fl">
+         <div class="hint">
+          在此您可以切换到关注的人或下属的工作空间
+          <div class="user-space-search">
+           <input type="text" placeholder="人员搜索" class="form-control placeholder-sm" id="user-search" />
+           <a class="search-btn" id="user-search-icon"><i class="icon-search"></i></a>
+          </div>
+         </div>
+         <ul class="user-tab js_userTab clearfix nosub">
+          <li data-items="user_follow" href="/users/myfollow" class="router  j_user_follow j_clickhide"><a>我关注的人</a></li>
+          <li data-items="user_mysub" href="/users/myfollow/4525670458124580496/subordinate" class="router j_user_mysub j_clickhide j_top_mysubordinates hide"><a>我的下属</a></li>
+          <li data-items="user_org" href="/organization" class="router j_user_org j_clickhide"><a>团队成员</a></li>
+         </ul>
+         <div class="user-list-container j_userlistScroll clearfix mCustomScrollbar _mCS_1 mCS_no_scrollbar" style="height: 694px;">
+          <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_1" tabindex="0">
+           <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" id="mCSB_1_container">
+            <ul class="user-list clearfix" id="user_follow"></ul>
+            <ul class="user-list clearfix hide" id="user_mysub"></ul>
+            <ul class="user-list clearfix hide" id="user_org"></ul>
+            <div class="user-follow-btns" id="user_followbtn">
+             <a class="btn btn-sm j_clickhide j_addFollow w-80 mr-10">加关注</a>
+             <a href="/users/myfollow" class="btn btn-sm j_clickhide w-80 router">更多关注</a>
+            </div>
+           </div>
+           <div class="mCSB_scrollTools mCSB_1_scrollbar mCS-darkblue mCSB_scrollTools_vertical" id="mCSB_1_scrollbar_vertical" style="display: none;">
+            <div class="mCSB_draggerContainer">
+             <div oncontextmenu="return false;" style="position: absolute; min-height: 30px; top: 0px;" class="mCSB_dragger" id="mCSB_1_dragger_vertical">
+              <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+             </div>
+             <div class="mCSB_draggerRail"></div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="user-list-container clearfix j_user-search-container hide">
+          <ul class="user-list clearfix" id="search-result"></ul>
+          <div class="j_noSearchResult hide">
+           <p align="center">无搜索结果!</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="useroption clearfix">
+        <a href="/organization" class="btn btn-sm btn-primary j_clickhide router">团队成员设置</a>
+        <a class="btn btn-sm btn-danger invite-toggle">邀请同事</a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="j_navwrap" class="base-nav j_basenav">
+     <ul class="nav-ul j_nav_ul">
+      <li class="nav-homeli j_homeli dropdown dropdown-menu-toggle j_messageCount" id="j_message"><a data-url="/portal" href="/portal" class="router"><i class="graph graph-home"></i><em class="message-count animated bounce j_point hide"></em></a>
+       <ul class="dropdown-menu dropdown-menu-left" id="j_dropMessage">
+        <li><a href="/blog/4525670458124580496/unread" class="router j_unreadblog"><span class="fr badge ml-10"></span><em class="graph graph1"></em>未读日报</a></li>
+        <li><a href="/portal/newitem" class="router j_newitem"><span class="fr badge ml-10"></span><em class="graph graph2"></em>未读事项</a></li>
+        <li><a href="/portal/newcomment" class="router j_newcomment"><span class="fr badge ml-10"></span><em class="graph graph3"></em>事项的新反馈</a></li>
+        <li><a href="/portal/newfinish" class="router j_newfinish"><span class="fr badge ml-10"></span><em class="graph graph4"></em>新完成事项</a></li>
+        <li><a href="/portal/atme" class="router j_atme"><span class="fr badge ml-10"></span><em class="graph graph5"></em>@我的新反馈</a></li>
+        <li class="divider"></li>
+        <li><a href="/messages/wechat" class="router j_wechat"><span class="fr badge ml-10"></span><em class="graph graph6"></em>聊天消息</a></li>
+        <li><a href="/portal/remind" class="router j_remind"><span class="fr badge ml-10"></span><em class="graph graph7"></em>提醒</a></li>
+        <li><a href="/portal/follow" class="router j_follow"><span class="fr badge ml-10"></span><em class="graph graph8"></em>关注申请</a></li>
+        <li><a href="/portal/applyJoin" class="router j_applyJoin"><span class="fr badge ml-10"></span><em class="graph graph9"></em>加入申请</a></li>
+        <li><a href="/portal/shareJoin" class="router j_shareJoin"><span class="fr badge ml-10"></span><em class="graph graph10"></em>共享申请</a></li>
+       </ul></li>
+      <li class="nav-blogli j_blog_NoAuthority hide"><a data-url="/blog" href="/blog" class="router"><i class="graph graph-blog"></i><span>日报</span></a></li>
+      <div class="nav-autolis j_baseautolis">
+       <li><a data-url="/tasks" href="/tasks" class="router j_modnav-task"><i class="graph graph-task"></i><span>任务</span></a></li>
+       <li><a data-url="/workflows" href="/workflows" class="router j_modnav-workflow"><i class="graph graph-flow"></i><span>审批</span></a></li>
+      </div>
+      <li class="j_activeli active"><a data-url="/crms/customer" href="/crms/customer" class="router j_modnav-customers"><i class="graph graph-crm"></i><span>客户</span></a></li>
+      <li class="more-li dropdown dropdown-menu-toggle" id="more-menu"><a class="dropdown-toggle">更多应用<i class="icon-angle-down"></i></a>
+       <div class="sub-cate dropdown-menu j_pageActive">
+        <div class="group">
+         <dl>
+          <dt>
+           汇报
+          </dt>
+          <dd>
+           <a data-url="/blog" href="/blog" class="router j_modnav-blog"><i class="graph graph-blog"></i><span>日报</span><span>工作日报</span></a>
+           <a data-url="/workreport" href="/workreport" class="router j_modnav-workreport"><i class="graph graph-report"></i><span>报告</span><span>计划报告</span></a>
+          </dd>
+         </dl>
+         <dl>
+          <dt>
+           CRM
+          </dt>
+          <dd>
+           <a data-url="/crms/customer" href="/crms/customer" class="router j_modnav-customers"><i class="graph graph-crm"></i><span>客户</span><span>客户库</span></a>
+           <a data-url="/crms/contact" href="/crms/contact" class="router j_modnav-contacts"><i class="graph graph-contact"></i><span>联系人</span><span>客户联系人</span></a>
+           <a data-url="/crms/saleChance" href="/crms/saleChance" class="router j_modnav-saleChances"><i class="graph graph-salechance"></i><span>商机</span><span>商机</span></a>
+           <a data-url="/crms/production" href="/crms/production" class="router j_modnav-production"><i class="graph graph-production"></i><span>产品</span><span>产品库</span></a>
+          </dd>
+         </dl>
+        </div>
+        <div class="group">
+         <dl>
+          <dt>
+           协作
+          </dt>
+          <dd>
+           <a data-url="/mainlines" href="/mainlines" class="router j_modnav-mainline"><i class="graph graph-goal"></i><span>项目</span><span>目标项目</span></a>
+           <a data-url="/tasks" href="/tasks" class="router j_modnav-task"><i class="graph graph-task"></i><span>任务</span><span>任务协作</span></a>
+           <a data-url="/calendar" href="/calendar" class="router j_modnav-calendar"><i class="graph graph-agenda"></i><span>日程</span><span>日程安排</span></a>
+           <a data-url="/documents" href="/documents" class="router j_modnav-document"><i class="graph graph-doc"></i><span>文档</span><span>知识文档</span></a>
+          </dd>
+         </dl>
+         <dl>
+          <dt>
+           审批
+          </dt>
+          <dd>
+           <a data-url="/workflows" href="/workflows" class="router j_modnav-workflow"><i class="graph graph-flow"></i><span>审批</span><span>审批流程</span></a>
+          </dd>
+         </dl>
+        </div>
+        <div class="group">
+         <dl>
+          <dt>
+           其他
+          </dt>
+          <dd>
+           <a data-url="/report/taskstatistics" href="/report/taskstatistics" class="router j_modnav-report"><i class="graph graph-stat"></i><span>统计</span><span>统计报表</span></a>
+           <a data-url="/info/wechat" href="/info/wechat" class="router j_modnav-wechat"><i class="graph graph-enterprise"></i><span>企业号</span><span>微信企业号</span></a>
+           <a data-url="/info/wechatservice" href="/info/wechatservice" class="router j_modnav-wechatservice"><i class="graph graph-wechatservice"></i><span>服务号</span><span>微信服务号</span></a>
+           <a data-url="/forms" href="/forms" class="router j_modnav-form"><i class="graph graph-formstat"></i><span>表单</span><span>业务表单</span></a>
+          </dd>
+         </dl>
+        </div>
+        <div class="base-nav-opt">
+         <a class="router entitybox-toggle" data-module="custmenu" data-id="new" id="top_menuset"><i class="icon-cog mr-10"></i>设置</a>
+        </div>
+       </div></li>
+     </ul>
+    </div>
+    <div class="quick-menu fr">
+     <ul class="nav nav-pills">
+      <li id="j_quickBuild" class="dropdown dropdown-menu-toggle quick-create-menu"><a><i class="graph graph-plus"></i></a>
+       <ul class="dropdown-menu dropdown-menu-right">
+        <li><a class="entitybox-toggle" data-module="blog" data-target="#blog-textarea" data-id="new"><i class="graph graph-blog"></i>写日报</a></li>
+        <li><a id="task-create-fast" class="entitybox-toggle" data-target="#task-title" data-value="today" data-module="task" data-id="today"><i class="graph graph-task"></i>安排任务</a></li>
+        <li><a class="entitybox-toggle" data-module="agenda" data-target="#title" data-id="new"><i class="graph graph-agenda"></i>安排日程</a></li>
+        <li><a id="document-create-fast" class="" data-value="new" data-module="document" data-id="new"><i class="graph graph-doc"></i>上传文件</a></li>
+        <li><a id="workflow-create-fast" class="entitybox-toggle" data-value="new" data-module="workflow" data-id="new"><i class="graph graph-flow"></i>提交申请</a></li>
+        <li><a id="mainline-create-fast" class="" data-value="new" data-module="mainline" data-id="new"><i class="graph graph-goal"></i>添加项目</a></li>
+        <li class="divider"></li>
+        <li><a id="customer-create-fast" class="entitybox-toggle" data-target="#customer-name" data-value="new" data-module="customer" data-id="new"><i class="graph graph-crm"></i>新建客户</a></li>
+        <li><a id="contact-create-fast" class="entitybox-toggle" data-value="new" data-module="contact" data-id="0"><i class="graph graph-linkman"></i>新建联系人</a></li>
+        <li><a id="contactRecord-create-fast" class="" data-module="record" data-target="#title" data-id="new"><i class="graph graph-record"></i>客户联系记录</a></li>
+       </ul></li>
+      <li>
+       <div class="search-box">
+        <input type="text" placeholder="全局搜索" class="placeholder-sm" id="searchTop" />
+        <a class="search-btn" id="searchTopIcon"><i class="icon-search"></i></a>
+       </div></li>
+      <li class="popover-toggle"><a><i class="graph graph-qq"></i></a>
+       <div class="popover popover-bottom">
+        <div class="arrow"></div>
+        <div class="popover-content">
+         <strong class="fs-14">官方群</strong>
+         <p class="mv-5">196945930</p>
+         <a class="btn btn-sm btn-block btn-info" href="http://jq.qq.com/?_wv=1027&amp;k=24sGyfN" target="_blank">加入</a>
+        </div>
+       </div></li>
+      <li class="dropdown dropdown-menu-toggle eteams-quick"><a class="dropdown-toggle"><i class="graph graph-eteams"></i><i class="icon-angle-down"></i></a>
+       <ul class="dropdown-menu dropdown-menu-right border-dropdown">
+        <li><a class="client-toggle">客户端下载</a></li>
+        <li class="wechat-toggle"><a>微信号</a>
+         <div class="popover popover-left">
+          <div class="arrow"></div>
+          <div class="popover-content">
+           <strong class="fs-14">微信号</strong>
+           <p class="mb-5">扫描二维码关注我们</p>
+           <img src="images/eteams_wechat.png" />
+          </div>
+         </div></li>
+        <li><a type="modal" class="invite-toggle">邀请同事</a></li>
+        <li><a type="modal" class="inviteNewTeam-toggle">推荐给好友</a></li>
+        <li><a class="j_joinOrCreate">创建或加入团队</a></li>
+        <li class="divider"></li>
+        <li><a href="/profile" class="router">个人设置</a></li>
+        <li><a href="/organization" class="router">团队成员设置</a></li>
+        <li><a href="/info" class="router">系统设置</a></li>
+        <li class="divider"></li>
+        <li><a id="help" target="_blank" href="http://www.eteams.cn/help">帮助</a></li>
+        <li><a class="advise-toggle">意见反馈</a></li>
+        <li><a href="/versioninfo" class="router">系统更新动态</a></li>
+        <li><a target="_blank" href="http://www.eteams.cn/product.html">产品介绍</a></li>
+        <li><a id="logout">退出系统</a></li>
+       </ul></li>
+     </ul>
+    </div>
+    <div id="module_notice" class="alert alert-danger notice-overlayer hide">
+     <a class="close">&times;</a>
+     <strong class="mr-5">提示:</strong>
+     <span>&quot;您的团队信息还未完善,点击&quot;<a href="/info" class="router">进入完善信息</a>&quot;页面&quot;</span>
+    </div>
+   </header>
+   <div class="hide" id="cloneDiv">
+    <li class="user-item j_clickhide j_userItems"><a class="fl router"><img class="avatar" /><em class="ellipsis"></em></a></li>
+    <a class="j_userItemsWechat fr wechat-toggle icon-comments" title="微信"></a>
+   </div>
+  </div> 
+  <div id="mainContainer">
+   <aside class="aside" id="js_menu">
+    <div class="aside-content j_asideScr  scrollwrapper mCustomScrollbar _mCS_21 mCS_no_scrollbar" style="height: 644px;">
+     <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_21" tabindex="0">
+      <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" id="mCSB_21_container">
+       <ul class="aside-nav">
+        <li class="js_menu_customer"><a class="link-item"><i class="item-icon graph-16-thin-crm"></i>客户库</a>
+         <ul class="j_all_crmMenu sub-nav">
+          <li data-entity="mine" class="js_menu "><a class="link-item"><span class="j_type-name">我</span>的客户</a></li>
+          <li data-entity="mineCreate" class="js_menu "><a class="link-item "><span class="j_type-name">我</span>创建的客户</a></li>
+          <li data-entity="watched" class="js_menu "><a class="link-item "><span class="j_type-name">我</span>关注的客户</a></li>
+          <li data-entity="shareToMe" class="js_menu "><a class="link-item ">共享给<span class="j_type-names">我的</span>客户</a></li>
+          <li data-entity="subordinates" class="js_menu  hide"><a class="link-item "><span class="j_type-name">我</span>下属客户</a></li>
+          <li data-entity="all" class="js_menu "><a class="link-item "><span class="j_type-names">我的</span>全部客户</a></li>
+         </ul></li>
+        <li data-entity="openSea" class="js_menu menu-openSea  hide"><a class="link-item"><i class="item-icon icon-box"></i>客户公海</a></li>
+        <li data-entity="contact" class="js_menu menu-contact "><a class="link-item"><i class="item-icon icon-user"></i>联系人</a></li>
+        <li data-entity="feedback" class="js_menu menu-feedback "><a class="link-item"><i class="item-icon icon-chat-3"></i>联系记录</a></li>
+        <li data-entity="customerCencus" class="js_menu menu-customerCencus "><a class="link-item"><i class="item-icon icon-stats"></i>客户统计</a></li>
+        <li data-entity="recycleBin" class="js_menu menu-recycleBin "><a class="link-item"><i class="item-icon icon-trash"></i>回收站</a></li>
+        <li data-entity="customerSetting" class="js_menu menu-customerSetting menu-customerSetting active"><a class="link-item"><i class="item-icon icon-cog"></i>设置</a></li>
+       </ul>
+      </div>
+      <div class="mCSB_scrollTools mCSB_21_scrollbar mCS-darkblue mCSB_scrollTools_vertical" id="mCSB_21_scrollbar_vertical" style="display: none;">
+       <div class="mCSB_draggerContainer">
+        <div oncontextmenu="return false;" style="position: absolute; min-height: 30px; height: 0px; top: 0px;" class="mCSB_dragger" id="mCSB_21_dragger_vertical">
+         <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+        </div>
+        <div class="mCSB_draggerRail"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </aside>
+   <div class="main">
+    <div class="toolkit toolkit-lg toolkit-bar clearfix">
+     <ul class="toolkit-list fl js_formtab">
+      <li class="toolkit-item toolkit-item-tab hide" id="tabper"><a><i class="icon-table2 glyphicon"></i>权限设置</a></li>
+      <li class="toolkit-item toolkit-item-tab active" id="tabdic"><a id="my-forms"><i class="icon-settings"></i>业务数据设置</a></li>
+      <li class="toolkit-item toolkit-item-tab router" id="tabCustomCustomer"><a id="my-forms"><i class="icon-hammer"></i>自定义字段</a></li>
+      <li class="js_openSea toolkit-item toolkit-item-tab router"><a id="my-forms"><i class="item-icon icon-box"></i>客户公海</a></li>
+      <li class="toolkit-item toolkit-item-tab router" id="tabSharer"><a id="my-forms"><i class="icon-share2"></i>默认共享设置</a></li>
+     </ul>
+    </div>
+    <div style="background-color: none;" class="m-20 crm-settings-view" id="js_tab_content">
+     <div class="loading_small hide" id="js_settingPreopertyDiv-loading">
+      <span>加载中，请稍后...</span>
+     </div>
+     <div class="module-set-view scrollwrapper mCustomScrollbar _mCS_22 mCS_no_scrollbar" id="settingPropertyDiv" style="height: 573px;">
+      <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_22" tabindex="0">
+       <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" id="mCSB_22_container">
+        <div class="table-tray">
+         <div class="tray-cell">
+          <div style="background: #fff;" marginbottom="20" class="clearfix">
+           <div marginbottom="20" class="crm-propSettings-view table-tray">
+            <div class="view-menu tray-cell" id="js_menu">
+             <ul class="nav j_all_crmMenu">
+              <li data-entity="status" data-title="客户状态" class="menu active"><a><span class="j_type-name"></span>客户状态</a></li>
+              <li data-entity="industry" data-title="客户行业" class="menu"><a><span class="j_type-name"></span>客户行业</a></li>
+              <li data-entity="type" data-title="客户类型" class="menu"><a><span class="fr badge js_unread"></span><span class="j_type-name"></span>客户类型</a></li>
+              <li data-entity="region" data-title="客户地区" class="menu"><a><span class="fr badge js_feed"></span><span class="j_type-names"></span>客户地区</a></li>
+              <li data-entity="visittype" data-title="联系类型" class="menu"><a><span class="fr badge js_feed"></span><span class="j_type-names"></span>联系类型</a></li>
+             </ul>
+            </div>
+            <div class="view-main tray-cell p-20">
+             <div class="alert alert-info p-10">
+              <span class="checkboxs"><i class="icon-checkbox-checked"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;允许用户自由新建
+             </div>
+             <table class="table" id="js_customerTable">
+              <thead>
+               <tr class="router filterSlip_js odd hide" id="property-list-clone">
+                <td style="vertical-align: middle"><span class="sn">3</span><input type="text" maxlength="15" value="" placeholder="名称" title="名称" name="telephone" class="form-control  js_propertyName underline" id="" /></td>
+                <td style="vertical-align: middle"><a class="js_btn-delete acl-hide acl-w-hide acl-p-hide" id="btn-delete" title="删除"><i style="font-size: 14px;" class="icon-trash"></i></a></td>
+               </tr>
+              </thead>
+              <tbody id="js_propertyList" class="ui-sortable">
+               <tr class="router filterSlip_js odd" id="list4525670458161180504">
+                <td style="vertical-align: middle"><span class="sn">1</span><input type="text" maxlength="15" value="" placeholder="名称" title="名称" name="telephone" class="form-control  js_propertyName underline" id="4525670458161180504" /></td>
+                <td style="vertical-align: middle"><a class="js_btn-delete acl-hide acl-w-hide acl-p-hide" id="btn-delete" title="删除"><i style="font-size: 14px;" class="icon-trash"></i></a></td>
+               </tr>
+               <tr class="router filterSlip_js odd" id="list4525670458161680505">
+                <td style="vertical-align: middle"><span class="sn">2</span><input type="text" maxlength="15" value="" placeholder="名称" title="名称" name="telephone" class="form-control  js_propertyName underline" id="4525670458161680505" /></td>
+                <td style="vertical-align: middle"><a class="js_btn-delete acl-hide acl-w-hide acl-p-hide" id="btn-delete" title="删除"><i style="font-size: 14px;" class="icon-trash"></i></a></td>
+               </tr>
+               <tr class="router filterSlip_js odd" id="list4525670458162280506">
+                <td style="vertical-align: middle"><span class="sn">3</span><input type="text" maxlength="15" value="" placeholder="名称" title="名称" name="telephone" class="form-control  js_propertyName underline" id="4525670458162280506" /></td>
+                <td style="vertical-align: middle"><a class="js_btn-delete acl-hide acl-w-hide acl-p-hide" id="btn-delete" title="删除"><i style="font-size: 14px;" class="icon-trash"></i></a></td>
+               </tr>
+               <tr class="router filterSlip_js odd" id="list4525670458162780507">
+                <td style="vertical-align: middle"><span class="sn">4</span><input type="text" maxlength="15" value="" placeholder="名称" title="名称" name="telephone" class="form-control  js_propertyName underline" id="4525670458162780507" /></td>
+                <td style="vertical-align: middle"><a class="js_btn-delete acl-hide acl-w-hide acl-p-hide" id="btn-delete" title="删除"><i style="font-size: 14px;" class="icon-trash"></i></a></td>
+               </tr>
+               <tr class="router filterSlip_js odd" id="list4525670458163180508">
+                <td style="vertical-align: middle"><span class="sn">5</span><input type="text" maxlength="15" value="" placeholder="名称" title="名称" name="telephone" class="form-control  js_propertyName underline" id="4525670458163180508" /></td>
+                <td style="vertical-align: middle"><a class="js_btn-delete acl-hide acl-w-hide acl-p-hide" id="btn-delete" title="删除"><i style="font-size: 14px;" class="icon-trash"></i></a></td>
+               </tr>
+              </tbody>
+             </table>
+             <div class="input-group w-full">
+              <input type="text" style="border: 1px solid #ccc; height: 30px; width: 320px; padding-left: 3px" value="" placeholder="名称" maxlength="15" class=" js_AddpropertyName form-control" id="" />
+              <span class="input-group-btn"><a href="#" class="btn btn-sm router" id="btnAddSetting"><i class="icon-plus-thin icoinline"></i>添加</a></span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="tray-cell view-side">
+          <div class="panel panel-alpha">
+           <div class="panel-heading">
+            <div class="panel-title">
+             小提示
+            </div>
+           </div>
+           <div class="panel-body fs-12">
+            <p class="e-row">这里可以设置客户的业务数据</p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mCSB_scrollTools mCSB_22_scrollbar mCS-darkblue mCSB_scrollTools_vertical" id="mCSB_22_scrollbar_vertical" style="display: none;">
+        <div class="mCSB_draggerContainer">
+         <div oncontextmenu="return false;" style="position: absolute; min-height: 30px; height: 0px; top: 0px;" class="mCSB_dragger" id="mCSB_22_dragger_vertical">
+          <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+         </div>
+         <div class="mCSB_draggerRail"></div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> 
+  <div class="j_stretchBox module-detail-slide" id="entitySlider"></div> 
+  <div class="goto-top graph hide"></div> 
+  <script src="js/libs.js"></script> 
+  <script src="js/plugins.js?v=1.1"></script> 
+  <script type="text/javascript">var ETEAMSID = '093d71e22d28e86db7fb1ef0371d7e1b'; var TEAMS = {"service":{"base":"https://www.eteams.cn","crm":"https://www.eteams.cn/crmapp","passport":"https://passport.eteams.cn","biaoge":"http://www.ebiaoge.com","websocket":"mc.eteams.cn:8443","mcConnector":"mc.eteams.cn:5023/mc","mcManager":"https://www.eteams.cn/manager"},"currentUser":{"username":"wyb","mobile":"18228088215","status":"normal","department":{"name":"\u5929\u9738\u725Bb","id":"4525670458133380497"},"secLevel":0,"authorities":[{"authority":"ROLE_USER"},{"authority":"ROLE_ADMIN"}],"activeDate":1456704581000,"loginAccount":"18228088215","loginCount":1,"lastLoginTime":1456704582728,"rank":"boss","admin":true,"name":"wyb","id":"4525670458124580496","userId":"4525552693524058287","employeeId":"4525670458124580496"},"currentTenant":{"tenantKey":"t899ep0gpz","tenantName":"\u5929\u9738\u725Bb","status":"probation","maxLicense":10,"usedLicense":1,"maxSpace":1000,"usedSpace":0,"dateCreated":1456704581000,"dateUpdated":1456704581000,"contact":"wyb","mobile":"18228088215","available":true},"globalConfig":[],"userConfig":[{"configKey":"guide.task.manager","configValue":"1","id":"4525670458157880498"},{"configKey":"guide.task.participant","configValue":"1","id":"4525670458157880499"},{"configKey":"guide.document.share","configValue":"1","id":"4525670458157880500"},{"configKey":"guide.customer.share","configValue":"1","id":"4525670458157880501"},{"configKey":"guide.workflow.operation","configValue":"1","id":"4525670458157880502"},{"configKey":"guide.workflow.createform","configValue":"1","id":"4525670458157880503"},{"configKey":"system.menu.display","configValue":"/crms/customer","id":"6995670478688147895"}],"passportUrl":"https://passport.eteams.cn","siblingsTenants":[{"employeeId":"4525552697072306457","tenantKey":"tb1yh58m28","isCurrent":false,"tenantName":"\u6211\u7684\u56E2\u961F1455526970310"},{"employeeId":"4525670458124580496","tenantKey":"t899ep0gpz","isCurrent":true,"tenantName":"\u5929\u9738\u725Bb"}],"noSubordinates":true,"nowTime":1456704930523,"eteamsHost":"https://www.eteams.cn","version":"1f6c37dde395eb63024a38bc63648cdd"};var crmContext = {"remoteDownloadUrl":"http://dl.eteams.cn"};var empMenusContext = [{"menuName":"首页","empid":4525670458124580496,"menuStatus":1,"orderIndex":0,"id":"0"},{"menuName":"任务协作","empid":4525670458124580496,"menuStatus":1,"orderIndex":1,"id":"1"},{"menuName":"审批流程","empid":4525670458124580496,"menuStatus":1,"orderIndex":2,"id":"2"},{"menuName":"目标项目","empid":4525670458124580496,"menuStatus":0,"orderIndex":3,"id":"3"},{"menuName":"知识文档","empid":4525670458124580496,"menuStatus":0,"orderIndex":4,"id":"4"},{"menuName":"客户库","empid":4525670458124580496,"menuStatus":0,"orderIndex":5,"id":"5"},{"menuName":"工作日报","empid":4525670458124580496,"menuStatus":0,"orderIndex":6,"id":"6"},{"menuName":"日程安排","empid":4525670458124580496,"menuStatus":0,"orderIndex":7,"id":"7"},{"menuName":"计划报告","empid":4525670458124580496,"menuStatus":0,"orderIndex":8,"id":"8"},{"menuName":"统计报表","empid":4525670458124580496,"menuStatus":0,"orderIndex":9,"id":"9"},{"menuName":"微信企业号","empid":4525670458124580496,"menuStatus":0,"orderIndex":10,"id":"10"},{"menuName":"业务表单","empid":4525670458124580496,"menuStatus":0,"orderIndex":11,"id":"11"},{"menuName":"客户联系人","empid":4525670458124580496,"menuStatus":0,"orderIndex":12,"id":"12"},{"menuName":"微信服务号","empid":4525670458124580496,"menuStatus":0,"orderIndex":13,"id":"13"},{"menuName":"商机","empid":4525670458124580496,"menuStatus":0,"orderIndex":14,"id":"14"},{"menuName":"产品","empid":4525670458124580496,"menuStatus":0,"orderIndex":15,"id":"15"}]</script> 
+  <script>
+TEAMS.menuCrmContext="/crms";
+TEAMS.runMode="production";
+TEAMS.version="1f6c37dde395eb63024a38bc63648cdd";
+</script> 
+  <script><!-- 自定义全局缓存 -->
+TEAMS.ownCache = {};
+</script> 
+  <script>
+seajs.config({base:"./js",preload:["eteams.js?v=1f6c37dde395eb63024a38bc63648cdd"],charset:"utf-8",debug:!1}),seajs.use("teams/core/main");  
+</script> 
+  <div class="smwx-box" id="smwx_box">
+   <div class="smwx-list hide" style="">
+    <div class="smwx-list-header clearfix">
+     <div class="opt">
+      <a class="smwx-list-ctrl-size"><i class="icon-minus-thin"></i></a>
+     </div>
+     <div class="smwx-list-search">
+      <i class="icon-search"></i>
+      <input type="text" placeholder="搜索" class="form-control suggestion" />
+     </div>
+     <ul class="tab">
+      <li><a data-entity="user">同事</a></li>
+      <li><a data-entity="channel">群组</a></li>
+      <li><a  data-entity="recent" class="active">最近</a></li>
+     </ul>
+    </div>
+    <div height="416" class="smwx-list-con scrollwrapper mCustomScrollbar _mCS_2 mCS_no_scrollbar" id="smwx-list-con" style="height: 416px;">
+     <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_2" tabindex="0">
+      <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" id="mCSB_2_container">
+       <div class="loading_small hide">
+        <span>正在加载，请稍后...</span>
+       </div>
+       <div class="smwx-list-search-result hide" id="smwx-list-search-result-query">
+        <div class="chat-member-list"></div>
+       </div>
+       <div class="smwx-list-search-result" id="smwx-list-search-result-all"></div>
+       <div class="smwx-list-search-result hide" id="smwx-list-search-result-channel"></div>
+       <div class="smwx-list-search-result" id="smwx-list-search-result-recent">
+        <div class="chat-member-list">
+         <div data-entity="employee" class="chat-member" id="10000">
+          <div class="avatar">
+           <img src="images/service.png" alt="avatar" />
+          </div>
+          <span class="name">eteams服务号</span>
+          <time></time>
+         </div>
+        </div>
+       </div>
+       <div pageno="2" class="members-more j_members-more hide">
+        更多...
+       </div>
+       <div class="members-more j_recent_more hide">
+        更多...
+       </div>
+      </div>
+      <div class="mCSB_scrollTools mCSB_2_scrollbar mCS-darkblue mCSB_scrollTools_vertical" id="mCSB_2_scrollbar_vertical" style="display: none;">
+       <div class="mCSB_draggerContainer">
+        <div oncontextmenu="return false;" style="position: absolute; min-height: 30px; top: 0px;" class="mCSB_dragger" id="mCSB_2_dragger_vertical">
+         <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+        </div>
+        <div class="mCSB_draggerRail"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="smwx-a-invite invite-toggle">
+     <i class="icon-plus-thin"></i>
+     <a>邀请同事</a>
+    </div>
+    <div class="hide channel-link-clone">
+     <div data-entity="channel" class="chat-member" id="channel-link-clone">
+      <div class="avatar">
+       <img src="images/group.png" alt="avatar" />
+      </div>
+      <span class="name"></span>
+      <time></time>
+     </div>
+    </div>
+    <div class="hide">
+     <div data-entity="employee" class="chat-member" id="employee-clone">
+      <div class="avatar">
+       <img src="images/avatar.png" alt="avatar" />
+      </div>
+      <span class="name"></span>
+      <time></time>
+     </div>
+     <div id="blogmessage-clone" class="smwx-mes-view">
+      <div class="smwx-mes-view-items router">
+       <span class="title"></span>
+       <span class="count badge badge-warning pull-right">8</span>
+      </div>
+     </div>
+    </div>
+    <div class="hide" id="members-pinyin">
+     <div id="list-history#" class="pinyin-container">
+      <span class="pinyin">#</span>
+      <div class="chat-member-list"></div>
+     </div>
+    </div>
+    <div id="all-employee-service" class="pinyin-container hide">
+     <span class="pinyin"></span>
+     <div class="chat-member-list">
+      <div id="10000" class="chat-member">
+       <div class="avatar">
+        <img src="images/service.png" alt="avatar" />
+       </div>
+       <span class="name">eteams服务号</span>
+      </div>
+     </div>
+    </div>
+    <div class="hide">
+     <div class="smwx-invite-tip text-center c-999 fs-12" id="invite-tip-clone">
+      团队人员少，请邀请同事加入协作吧！
+      <div class="mt-10">
+       <a class="invite-toggle btn btn-danger btn-sm">邀请同事加入</a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="smwx-chat hide">
+    <div class="smwx-chat-lf" id="leftChatList">
+     <div marginbottom="" class="smwx-chat-scr-con j_chatlistScr scrollwrapper" style="height: 694px;">
+      <ul></ul>
+     </div>
+    </div>
+    <div class="hide" id="chat-left-list-clone">
+     <li><a class="j_leftChatOne"></a><span class="smwx-chat-cur-close">&times;</span></li>
+    </div>
+    <div class="smwx-chat-rt">
+     <div class="smwx-chat-header">
+      <div class="chat-name"></div>
+      <div class="opt">
+       <a class="smwx-mini-ctrl-size"><i class="icon-minus-thin"></i></a>
+       <a class="smwx-mini-ctrl-close"><i class="icon-plus-thin"></i></a>
+      </div>
+      <div class="addmember-layer j_memberLayer">
+       <div auto-scroll="yes" class="j_memberLayerScr">
+        <div class="inner">
+         <ul>
+          <div id="channel-member-top"></div>
+          <div>
+           <li class="add"><a data-multi="true" data-entity="employee" class="add-member selector-toggle" title="添加成员" id="mini-new-channel"><i class="icon-plus-thin"></i></a></li>
+          </div>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div height="342" class="smwx-chat-content w-full j_chatConScr  scrollwrapper" id="smwx-chat-top" style="height: 342px;">
+      <div id="message-list-div"></div>
+      <div class="chat-message-list" id="message-list-div-clone"></div>
+     </div>
+     <div class="chat-editor">
+      <div class="tool-bar j_minichat_tool" style="position: relative;">
+       <div class="a-tools fl">
+        <a data-placement="top" data-toggle="tooltip" title="" data-original-title="点击添加表情" href="javascript:void(0)" class="chat-emoji"><i class="icon-smiley"></i></a>
+        <a class="graph a-pic" title="" data-placement="top" data-toggle="tooltip" id="chat-image-mini" style="position: relative; z-index: 0;" data-original-title="请选择图片"><i class="icon-image2"></i></a>
+        <a class="graph a-attach" title="" data-placement="top" data-toggle="tooltip" id="chat-attachment" style="position: relative; z-index: 0;" data-original-title="请选择附件"><i class="icon-paperclip"></i></a>
+       </div>
+       <a class="a-his chat-history-toggle fr" id="history-chat"><i class="icon-history icoinline"></i>聊天记录</a>
+       <div id="p1acl5tt4u1bk41bv94k21cnbl650_html5_container" style="position: absolute; background: transparent none repeat scroll 0% 0%; width: 0px; height: 0px; overflow: hidden; z-index: -1; opacity: 0; top: 0px; left: 0px;" class="plupload html5">
+        <input type="file" multiple="multiple" accept="" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" id="p1acl5tt4u1bk41bv94k21cnbl650_html5" />
+       </div>
+       <div id="p1acl5tt5119ir1372eu1mmp1bbj3_html5_container" style="position: absolute; background: transparent none repeat scroll 0% 0%; width: 0px; height: 0px; overflow: hidden; z-index: -1; opacity: 0; top: 0px; left: 0px;" class="plupload html5">
+        <input type="file" multiple="multiple" accept="" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" id="p1acl5tt5119ir1372eu1mmp1bbj3_html5" />
+       </div>
+      </div>
+      <div class="content">
+       <textarea class="area w-full" id="message-textarea"></textarea>
+      </div>
+      <div class="action-bar j_actionbar">
+       <div class="fl">
+        <span class="j_key-tip key-tip c-666"><i class="icon-exclamation-sign icoinline"></i>按Ctrl+Enter键发送</span>
+       </div>
+       <ul class="toolkit-list send-btns fr">
+        <li class="toolkit-item dropdown-arrow fr">
+         <div class="btn-group dropdown dropdown-menu-toggle">
+          <a class="dropdown-toggle btn btn-sm btn-primary"><i class="icon-angle-down"></i></a>
+          <ul data-type="CtrlEnter" class="dropdown-menu dropdown-menu-right border-dropdown j_sendType_menu">
+           <li class="j_sendType_li" data-type="Enter"><a class="sendType"><i class="icon-checkmark"></i><span>按Enter发送</span></a></li>
+           <li class="j_sendType_li active" data-type="CtrlEnter"><a class="sendType"><i class="icon-checkmark"></i><span>按Ctrl+Enter发送</span></a></li>
+          </ul>
+         </div></li>
+        <li class="toolkit-item fr mr-0 dropdown-arrow-pre"><a class="btn btn-sm w-60 btn-primary j_btn-send">发送</a></li>
+       </ul>
+       <span class="limit-tip c-999 fr mr-10" id="limitTip">还可以输入1000字</span>
+      </div>
+     </div>
+    </div>
+    <div class="hide" id="channel-member-top-clone">
+     <li class="usercard-toggle" id=""><img src="images/" data-original-title="" data-placement="top" data-toggle="tooltip" /><p class="j_name ellipsis"></p></li>
+    </div>
+    <div class="chat-message hide" id="chat-message-clone">
+     <div class="avatar">
+      <img style="cursor:pointer;" class="usercard-toggle" src="images/avatar.png" />
+     </div>
+     <div class="chat-content">
+      <div style="cursor:pointer;" class="name usercard-toggle"></div>
+      <div class="bubble break">
+       内容
+      </div>
+      <div class="chat-time">
+       <i class="icon-time mr-3"></i>
+       <time>17:32:28</time>
+      </div>
+     </div>
+    </div>
+    <div class="date-divider date-line-clone hide">
+     <div class="line"></div>
+     <span></span>
+    </div>
+   </div>
+   <div class="smwx-mini-bar">
+    <div class="smwx-mini-list-trigger">
+     <i class="icon-comments"></i>企业微信
+     <span class="smwx-msg-number"></span>
+    </div>
+    <div class="smwx-mini-chat-trigger hide">
+     <span class="smwx-mini-text-pre">正在与</span>
+     <span class="smwx-mini-name"></span>
+     <span class="smwx-mini-text-next">的聊天中</span>
+    </div>
+   </div>
+  </div>
+  <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;">
+   <object height="100%" width="100%" data="js/clipboard.swf?noCache=1456704779552" type="application/x-shockwave-flash" name="global-zeroclipboard-flash-bridge" id="global-zeroclipboard-flash-bridge"><param value="sameDomain" name="allowScriptAccess"></param><param value="all" name="allowNetworking"></param><param value="false" name="menu"></param><param value="transparent" name="wmode"></param><param value="trustedOrigins=www.eteams.cn%2C%2F%2Fwww.eteams.cn%2Chttps%3A%2F%2Fwww.eteams.cn&amp;swfObjectId=global-zeroclipboard-flash-bridge" name="flashvars"></param></object>
+  </div>
+  <textarea style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; padding: 0px; box-sizing: content-box; word-wrap: break-word; height: 0px ! important; min-height: 0px ! important; overflow: hidden; transition: none 0s ease 0s ; font-family: Arial," hiragino="" sans="" gb",microsoft="" yahei,sans-serif;="" font-size:="" 15px;="" font-weight:="" 700;="" font-style:="" normal;="" letter-spacing:="" 0px;="" text-transform:="" none;="" word-spacing:="" text-indent:="" line-height:="" 24px;="" width:="" 715px;"="" tabindex="-1" class="autosizejs"></textarea>
+ </body>
+</html>

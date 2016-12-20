@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html><head>
+	<title>signup</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		*{
+			font-family: "微软雅黑";
+		}
+		body{
+			font: 14px/1.5 arial,microsoft yahei,simsun,simhei,sans-serif;
+		}
+		.tc {
+			text-align:center
+		}
+		.mgb20 {
+			margin-bottom:20px;
+		}
+	
+		.pl95 {
+			padding-left:95px;
+		}
+		/*表单*/
+		.ui-form-item {
+			padding-bottom:20px;
+		}
+		.ui-form-item-text {
+			line-height:40px;
+		}
+		.ui-form-item-text .ui-label {
+			display:inline-block;
+			float:none;
+		}
+		.ui-label {
+		    color: #4c4c4c;
+		    font-size: 14px;
+		    line-height: 16px;
+		    margin-right: 10px;
+		    padding-top: 7px;
+		    text-align: right;
+			padding-top: 13px;
+			width:110px;
+			float:left;
+		}
+		.important-hint {
+		    color: red;
+		    display: block;
+		    float: right;
+		    font-size: 20px;
+		    line-height: 45px;
+		    margin: 0 0 0 2px;
+		}
+		.ui-input:focus {
+			border-color:#66AFE9;
+			box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px rgba(102, 175, 233, 0.6);
+		}
+		.ui-input[readonly] {
+			background: #f0f0f0;
+			cursor:not-allowed;
+		}
+		.ui-input[readonly]:focus{
+			box-shadow:none;
+			border-color: #dddddd;
+		}
+		.ui-input[diabled] {
+			background: #f0f0f0;
+		}
+		.ui-input-wrong {
+			border-color:#ac3635;
+		}
+		.ui-input-wrong:hover,.ui-input-wrong:focus {
+			border-color:#ac3635;
+			box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px #CE8483;
+		}
+		.ui-input-correct {
+			border-color:#45940c;
+			background:url("images/ui-correct.png") right center no-repeat;
+		}
+		.ui-input-correct:hover,.ui-input-correct:focus {
+			border-color:#45940c;
+			box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px #67B168;
+		}
+		.ui-input-check {
+			width:100px;
+			margin-right:10px;
+		}
+		.ui-checkbox {
+			margin-bottom: 2px;
+		    margin-right: 5px;
+		    vertical-align: middle;
+		}
+		.ui-form-item label.error {
+			max-width:130px;
+			vertical-align:middle;
+		}
+		input.error {
+			color:#4D4D4D;
+		}
+		.error {
+			color: #A94442;
+		}
+		/*按钮*/
+		.pl150 {
+			   margin: 0 auto;
+		    overflow: hidden;
+		    padding: 0 0 15px;
+		    width: 400px;
+		}
+		
+			.pl150 .btn {
+			    border-radius: 5px;
+			    display: block;
+			    font-weight: bold;
+			    margin: 0 auto;
+			    padding: 10px;
+			    width: 400px;
+			}
+		.btn {
+			display:inline-block;
+			*display:inline;
+			*zoom:1;
+			font-size: 14px;
+			padding: 6px 12px;
+			font-weight: normal;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			cursor: pointer;
+			background-color:#f5f5f5;
+			background-image:-moz-linear-gradient(top,#fff,#f1f1f1);
+			background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f1f1f1));
+			background-image:-webkit-linear-gradient(top,#fff,#f1f1f1);
+			background-image:-o-linear-gradient(top,#fff,#f1f1f1);
+			background-image:linear-gradient(to bottom,#fff,#f1f1f1);
+			background-repeat:repeat-x;
+			border: 1px solid #ccc;
+			-webkit-user-select: none;
+			 -moz-user-select: none;
+			  -ms-user-select: none;
+			   -o-user-select: none;
+				  user-select: none;
+			color:#666666;
+		}
+		.btn:hover {
+			background-color:#f4f3f3;
+			background-image:none;
+		}
+		.btn-minw80 {
+			min-width:80px;
+		}
+		.btn.disabled,
+		.btn[disabled],
+		.btn.disabled:active,
+		.btn[disabled]:active {
+		  cursor: default;
+		  background-image: none;
+		  opacity: 0.65;
+		  filter: alpha(opacity=65);
+		  -webkit-box-shadow: none;
+		  -moz-box-shadow: none;
+		  box-shadow: none;
+		}
+		.btn:hover,.btn:focus {
+		  color: #333333;
+		  text-decoration: none;
+		}
+		.btn:active,.btn.active {
+		  color: #333333;
+		  text-decoration: none;
+		  outline: 0;
+		  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		     -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		}
+	.btn-primary {
+		  color: #ffffff;
+		  background-color: #428bca;
+		  background-image:none;
+		  border-color: #357ebd;
+		}
+		.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active {
+		  color: #ffffff;
+		  background-color: #3276b1;
+		  border-color: #285e8e;
+		}
+		.btn-lg {
+		    font-size: 16px;
+		    line-height: 1.33;
+		    padding: 8px 16px;
+		}
+		/*加载*/
+		.active-panel {
+			padding:20px;
+		}
+		.active-panel h3 {
+			margin:15px 0;
+		}
+		.loading_big {
+			position:relative;
+		}
+		.loading_big img {
+			width:120px;
+		}
+		.loading_text {
+			position:absolute;
+			top:48px;
+			width:100%;
+			text-align:center;
+			font-size:12px;
+			display:block;
+			color:#666;
+		}
+		.ui-form-item > .formitem-error {
+		    clear: both;
+		    display: block;
+		    margin: 0 auto;
+		    text-align: right;
+		    width: 380px;
+		}
+		.important-hint {
+		    color: red;
+		    display: block;
+		    float: right;
+		    font-size: 20px;
+		    line-height: 45px;
+		    margin: 0 0 0 2px;
+		}
+			.mgb20 a{color:#3366cc;}
+			.hide{display: none;}
+			.ui-form-item > lable {
+			    float: left;
+			    height: 40px;
+			    line-height: 40px;
+			    margin: 0 10px 0 0;
+			    text-align: right;
+			    width: 105px;
+			}
+			.ui-input {
+			 border: 1px solid #dddddd;
+			    color: #4d4d4d;
+			    display: block;
+			    font-size: 14px;
+			    height: 18px;
+			    line-height: 18px;
+			    margin: 0 auto;
+			    padding: 11px 10px;
+			    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+			    vertical-align: middle;
+			    width: 293px;
+			    float:left;
+			}
+	</style>
+</head>
+<body>
+	<div id="tip" class="pl150 error">&nbsp;</div>
+	<div id="mainPanel" class="w600 res-person-panel">
+		<form novalidate="novalidate" id="signupForm" method="post" class="ui-form" autocomplete="off">
+			<div class="ui-form-item">
+				<lable>账号<span class="important-hint">*</span></lable>
+				<input class="ui-input" id="account" name="account" placeholder="邮箱或手机号" type="text">
+				<span class="formitem-error"><label id="accountTip" for="account" generated="true" class="error"></label></span>
+			</div>
+		
+			<div class="ui-form-item">
+			    <lable>姓名<span class="important-hint">*</span></lable>
+				<input class="ui-input" id="username" name="username" placeholder="姓名" type="text">
+				<span class="formitem-error"><label for="username" generated="true" class="error"></label></span>
+			</div>
+
+			<div class="ui-form-item">
+		        <lable>密码<span class="important-hint">*</span></lable>
+				<input class="ui-input password" id="password" name="password" placeholder="密码" type="password">
+				<span class="formitem-error"><label for="password" generated="true" class="error password-error"></label></span>
+			</div>
+     
+			<div class="ui-form-item">
+				<lable>密码确认<span class="important-hint">*</span></lable>
+				<input class="ui-input password" id="password2" name="password2" placeholder="确认密码" type="password">
+				<span class="formitem-error"><label for="password2" generated="true" class="error"></label></span>
+			</div>
+	
+			<div class="mgb20 pl150">
+				<input checked="checked" id="contract" name="contract" class="ui-checkbox" type="checkbox">我同意<a href="https://www.eteams.cn/services.html" target="_blank">服务条款</a>
+				<span class="formitem-error"><label for="contract" generated="true" class="error"></label></span>
+			</div>
+		
+			<div class="pl150">
+				<input class="btn btn-lg btn-primary" value="立即注册" type="submit">
+			</div>
+		</form>
+	</div>
+	<!--加载提示-->
+	<div id="active-status" class="w600 tc hide">
+		<div class="active-panel">
+			<div class="loading_big">
+				<img src="signup_data/loading_active.gif">
+				<span class="loading_text">加载中...</span>
+			</div>
+			<h3>正在为您创建空间,请耐心等待，不要离开此页面</h3>
+			<p>您和您同事进行工作日志分享、工作任务跟踪、知识文档分享、人员工作状态跟踪</p>
+		</div>
+	</div>
+	<iframe id="myframe" src="signup.htm" style="display:none"></iframe>
+	<script type="text/javascript" src="signup_data/jquery-1.js"></script>
+	<script type="text/javascript" src="signup_data/jquery.js"></script>
+<script type="text/javascript">
+var signup = {};
+$(function(){
+	$("#signupForm").validate({
+		rules: {
+			"account":{required:true},
+			"username": {
+				required:true,
+				maxlength: 50,
+				checkName:true
+			},
+			"contract":"required",
+			"password": {
+				required:true,
+				minlength: 6,
+				maxlength: 20,
+				checkPassword:true
+			},
+			"password2": {
+				required:true,
+				equalTo: "#password"
+			}
+		},
+		messages: {
+			"account":{required:"请输入账号"},
+			"username": {
+				required:"请输入姓名",
+				maxlength:"姓名至多50个字符"
+			},
+			"password": {
+				required:"请输入密码",
+				minlength:"密码长度至少6位",
+				maxlength:"密码长度至多20位"
+			},
+			"password2": {
+				required:"请确认密码",
+				equalTo:"两次密码不一致"
+			},
+			"contract":"必须同意服务条款"
+		},
+		submitHandler:function(form){
+			signup.valid_account($('#account'),function(){
+				signup.submitForm();
+			});
+		}
+	});
+
+	//姓名去除空格
+	$('#username').on('change',function(event){
+		var username = $.trim($(this).val());
+		$(this).val(username);
+	});
+
+	//验证
+	$('#account').on('blur',function(event){
+		signup.valid_account($(this));
+	});
+	
+	//密码
+	$('#password').on('keyup', function(event){
+		var e = event ? event :(window.event ? window.event : null);
+		var password = $(this).val();
+		if(e.keyCode== 32){
+			$('.password-error').html('密码不能有空格');
+			$(this).val(password.substring(0,password.length-1));
+		}else if(password.indexOf(' ') == -1){
+			$('.password-error').html('');
+		}
+	});
+});
+
+/**
+ * 表单提交
+ */
+signup.submitForm = function(){
+	$('#mainPanel').addClass('hide');
+	$('#active-status').removeClass('hide');
+	$.ajax({
+		url:'/signup/initEmployee.json',
+		type:'post',
+		dataType:'json',
+		data:{'account':$('#account').val(),'username':$('#username').val(),'password':$('#password').val()},
+		success:function(data){
+			if(data.message){
+				$('#tip').html(data.message);
+				$('#active-status').addClass('hide');
+				$('#mainPanel').removeClass('hide');
+				return false;
+			}else{
+				signup.login(data.userImpl);
+			}
+		}
+	});
+}
+
+/**
+ * 登录
+ */
+signup.login = function(u){
+	$.ajax({
+		type:'post',
+		async : false,
+		crossDomain : true,
+		dataType : "jsonp",
+		url:'https://passport.eteams.cn/rest/login',
+		jsonpCallback: "success", 
+		data:{'username':$('#account').val(),'password':$('#password').val(), service:location.protocol+'//'+location.host},
+		success:function(data){
+			if(data.result  && data.st){
+				$.ajax({
+					type:'post',
+					url:'/loginService?serviceTicket='+data.st,
+					dataType:'json',
+					success:function(data){
+						if(data && data.success){
+							var u = data.user,
+								t = data.tenant,
+								avatar = u.avatar ? '/base/download/'+u.avatar.p3 : 'images/avatar.png';
+							var params = {
+									'uid':u.userId,
+									'eid':u.id,
+									'username':u.username,
+									'account':u.loginAccount,
+									'tenantKey':t.tenantKey,
+									'ETEAMSID':data.ETEAMSID,
+									'avatar':avatar
+								};
+							$('#myframe').attr("src","http://www.ebiaoge.com/transfer.jsp?"+$.param(params));
+						}else{
+							 $("#tip").text(data.message);
+						}
+					}
+				});
+			}else{
+				$('#tip').html(data.message);
+				return false;
+			}
+			
+		}
+	});
+}
+
+/**
+ * 账号验证
+ */
+signup.valid_account = function(obj, callback){
+	var account = $.trim(obj.val());
+	if(account == '') return false;
+	
+	obj.val(account);
+	var pattenType= new RegExp(/^\d+$/);
+	var pattenEmail = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/);
+	var pattenMobile = new RegExp(/^(13|14|15|17|18)\d{9}$/);
+	if(pattenType.test(account)){  //全部为数字时 判定为手机
+		if( pattenMobile.test(account)){ //手机号格式正确
+			$('#mobile').val(account);
+			$('#accountTip').html('');
+			signup.valid_mobile(obj, callback);
+			return true;
+		}else{ 
+			checkInputError(obj,false);
+			$('#accountTip').text('请输入有效手机号').show();
+		}
+	}else{
+		if(pattenEmail.test(account)){ //邮箱格式正确
+			$('#email').val(account);
+			$('#accountTip').html('');	
+			 signup.valid_email(obj, callback);
+			return true;
+		}else{
+			checkInputError(obj,false);
+			$('#accountTip').text('请输入有效邮箱').show();
+		}
+	}
+}
+/**
+ * 远程验证手机
+ */
+signup.valid_mobile = function(obj, callback) {
+	$.ajax({
+		url:'/signup/validateMobile.json',
+		type:'get',
+		dataType:'json',
+		data:{'account':obj.val()},
+		success:function(data){
+			if(data.message){
+				$('#accountTip').html(data.message).show();
+				checkInputError(obj,false);
+				return false;
+			}else{
+				$('#accountTip').html('');	
+				checkInputError(obj,true);
+				if(callback) callback();
+			}
+		}
+	});
+}
+/**
+ * 远程验证邮箱
+ */
+signup.valid_email = function(obj, callback){
+	$.ajax({
+		url:'/signup/validateEmail.json',
+		type:'get',
+		dataType:'json',
+		data:{'account':obj.val()},
+		success:function(data){
+			if(data.message){//验证失败
+				$('#accountTip').html(data.message).show();
+				checkInputError(obj,false);
+				return false;
+			}else{//验证成功
+				$('#accountTip').html('');
+				checkInputError(obj,true);
+				if(callback) callback();
+			}
+		}
+	});
+}
+/**
+ * 输入框样式变更
+ */
+function checkInputError(obj, flag){
+	if(flag){
+		obj.addClass('ui-input-correct').removeClass('ui-input-wrong');
+	}else{
+		obj.removeClass('ui-input-correct').addClass('ui-input-wrong');
+	}
+}
+</script>
+
+
+</body></html>

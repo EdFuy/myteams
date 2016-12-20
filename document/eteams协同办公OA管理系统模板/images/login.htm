@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html><head>
+	<title>login</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+	* {
+    font-family: "微软雅黑";
+}
+	   .biaoge-login .ui-form-item {
+			padding-bottom:20px;
+			overflow:hidden;
+		}
+		.biaoge-login .ui-form-item-text {
+			line-height:40px;
+		}
+		.biaoge-login .ui-form-item-text .ui-label {
+			display:inline-block;
+			float:none;
+		}
+		.biaoge-login .ui-label {
+		    color: #4c4c4c;
+		    font-size: 14px;
+		    line-height: 16px;
+		    margin-right: 10px;
+		    padding-top: 7px;
+		    text-align: right;
+			padding-top: 13px;
+			width:140px;
+			float:left;
+		}
+	
+			.biaoge-login .ui-input {
+			    border: 1px solid #dddddd;
+			    color: #4d4d4d;
+			    display: block;
+			    float: left;
+			    font-size: 14px;
+			    height: 18px;
+			    line-height: 18px;
+			    margin: 0 auto;
+			    padding: 11px 10px;
+			    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+			    vertical-align: middle;
+			    width: 330px;
+			}
+		.biaoge-login .ui-input:focus {
+			border-color:#66AFE9;
+			box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px rgba(102, 175, 233, 0.6);
+		}
+		.biaoge-login .ui-input[readonly] {
+			background: #f0f0f0;
+			cursor:not-allowed;
+		}
+		.biaoge-login .ui-input[readonly]:focus{
+			box-shadow:none;
+			border-color: #dddddd;
+		}
+		.biaoge-login .ui-input[diabled] {
+			background: #f0f0f0;
+		}
+		.biaoge-login .ui-input-wrong {
+			border-color:#ac3635;
+		}
+		.biaoge-login .ui-input-wrong:hover,.ui-input-wrong:focus {
+			border-color:#ac3635;
+			box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px #CE8483;
+		}
+		.biaoge-login .ui-input-correct {
+			border-color:#45940c;
+			background:url("images/ui-correct.png") right center no-repeat;
+		}
+		.biaoge-login .ui-input-correct:hover,.ui-input-correct:focus {
+			border-color:#45940c;
+			box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px #67B168;
+		}
+		.biaoge-login .ui-input-check {
+			width:100px;
+			margin-right:10px;
+		}
+		.biaoge-login .ui-checkbox {
+			margin-bottom: 2px;
+		    margin-right: 5px;
+		    vertical-align: middle;
+		}
+		.biaoge-login .ui-form-item label.error,.ui-form-item span.error {
+			margin-left:15px;
+			display:inline-block;
+			max-width:130px;
+			vertical-align:middle;
+		}
+		.biaoge-login input.error {
+			color:#4D4D4D;
+		}
+
+		/*按钮*/
+	
+		
+		.biaoge-login .fmes-bar .btn {
+		    border-radius: 5px;
+		    display: block;
+		    font-weight: bold;
+		    margin: 0 auto;
+		    padding: 10px;
+		    width: 400px;
+		}
+		.biaoge-login .btn {
+			display:inline-block;
+			*display:inline;
+			*zoom:1;
+			font-size: 14px;
+			padding: 6px 12px;
+			font-weight: normal;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			cursor: pointer;
+			background-color:#f5f5f5;
+			background-image:-moz-linear-gradient(top,#fff,#f1f1f1);
+			background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f1f1f1));
+			background-image:-webkit-linear-gradient(top,#fff,#f1f1f1);
+			background-image:-o-linear-gradient(top,#fff,#f1f1f1);
+			background-image:linear-gradient(to bottom,#fff,#f1f1f1);
+			background-repeat:repeat-x;
+			border: 1px solid #ccc;
+			-webkit-user-select: none;
+			 -moz-user-select: none;
+			  -ms-user-select: none;
+			   -o-user-select: none;
+				  user-select: none;
+			color:#666666;
+		}
+		.biaoge-login .btn:hover {
+			background-color:#f4f3f3;
+			background-image:none;
+		}
+		.biaoge-login .btn-minw80 {
+			min-width:80px;
+		}
+		.biaoge-login .btn.disabled,
+		.biaoge-login .btn[disabled],
+		.biaoge-login .btn.disabled:active,
+		.biaoge-login .btn[disabled]:active {
+		  cursor: default;
+		  background-image: none;
+		  opacity: 0.65;
+		  filter: alpha(opacity=65);
+		  -webkit-box-shadow: none;
+		  -moz-box-shadow: none;
+		  box-shadow: none;
+		}
+		.biaoge-login .btn:hover,.biaoge-login .btn:focus {
+		  color: #333333;
+		  text-decoration: none;
+		}
+		.biaoge-login .btn:active,.biaoge-login .btn.active {
+		  color: #333333;
+		  text-decoration: none;
+		  outline: 0;
+		  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		     -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		}
+		.biaoge-login .btn-primary {
+		  color: #ffffff;
+		  background-color: #428bca;
+		  background-image:none;
+		  border-color: #357ebd;
+		}
+		.biaoge-login .btn-primary:hover,.biaoge-login .btn-primary:focus,.biaoge-login .btn-primary:active,.biaoge-login .btn-primary.active {
+		  color: #ffffff;
+		  background-color: #3276b1;
+		  border-color: #285e8e;
+		}
+		.biaoge-login .btn-lg {
+		    font-size: 16px;
+		    line-height: 1.33;
+		    padding: 8px 16px;
+		}
+		
+		.biaoge-login .ui-form-item2,.biaoge-login .fmes-bar {
+		    margin: 0 auto;
+		    width: 400px;
+		}
+		.biaoge-login .ui-form-item2 span{display:block; font-size:14px; float:left;}
+		 .biaoge-login .ui-form-item2>span>a{color:#3366CC;cursor:pointer;}
+		.biaoge-login .ui-form-item2 >.autologon{float:left;}
+		.biaoge-login .ui-form-item2 >.lostpsd{float:right;}
+		
+		.biaoge-login .ui-form-item2,.biaoge-login  .fmes-bar {
+		    margin: 0 auto;
+		    overflow: hidden;
+		    padding: 0 0 15px;
+		    width: 400px;
+		}
+		.biaoge-login .ui-form-item>#account{background:url(../images/login-user.png) no-repeat 10px center; text-indent:30px;}
+		.biaoge-login .ui-form-item>#password{background:url(../images/login-lock.png) no-repeat 10px center;text-indent:30px;}
+		
+		.biaoge-login .biaoge-logintip {
+		    color: #a94442;
+		    font-size: 14px;
+		    margin: 10px auto;
+		    width: 330px;
+		}
+		.biaoge-login .ui-form-item > lable {
+		    float: left;
+		    height: 40px;
+		    line-height: 40px;
+		    margin: 0 10px 0 0;
+		    text-align: right;
+		    width: 70px;
+		}
+	</style>
+</head>
+<body class="biaoge-login">
+	<div id="tip" class="biaoge-logintip">&nbsp;</div>
+	<div class="ui-form-item">
+		<lable>账户</lable>
+		<input class="ui-input" id="account" placeholder="请输入邮箱或手机号（可使用eteams账号登录）" autocomplete="off" type="text">
+	</div>
+	<div class="ui-form-item">
+		<lable>密码</lable>
+		<input class="ui-input" id="password" placeholder="请输入密码" autocomplete="off" type="password">
+	</div>
+ <div class="ui-form-item ui-form-item2"><span class="aut ologon"><input type="checkbox">自动登录</span><span class="lostpsd"><a href="https://passport.eteams.cn/password" target="_blank">忘记密码？</a></span></div>
+ <div style="clear:both;"></div>
+	<div class="fmes-bar">
+		<button id="login-btn" type="button" class="btn btn-lg btn-primary">登 录</button>
+	</div>
+	<iframe id="myframe" src="login.htm" style="display:none"></iframe>
+	<script type="text/javascript" src="signup_data/jquery-1.js"></script>
+<script type="text/javascript">
+var login = {};
+$(function(){
+	$('#login-btn').click(function(){
+		var emailReg = /^([A-Za-z0-9_\.-]+)@([\dA-Za-z\.-]+)\.([A-Za-z\.]{2,6})$/;
+		var aObj = $('#account');
+		var pswObj = $('#password');
+		var account = $.trim(aObj.val());
+		var password = $.trim(pswObj.val());
+		if(account==""&&password==""){
+		    $("#tip").html("账号和密码均不能为空");
+		    aObj.focus();
+			return;
+		}
+		if(account==""){
+			$("#tip").html("账号不能为空");
+			aObj.focus();
+			return;
+		 }
+		 if(account.indexOf('@') >=0 && !emailReg.test(account)){
+			$("#tip").html("邮箱格式不正确");
+			aObj.focus();
+			return;
+		 }
+		 if(password==""){
+			$("#tip").html("密码不能为空");
+			pswObj.focus();
+			return;
+		 }
+		 if(password.length<=5){
+			$("#tip").html("密码不能少于6位");
+			pswObj.focus();
+			return;
+		 }
+		 
+		$.ajax({
+			type:'post',
+			async : false,
+			crossDomain : true,
+			dataType : "jsonp",
+			url:'https://passport.eteams.cn/rest/login',
+			jsonpCallback: "success", 
+			data:{username:account, password:password, service:location.protocol+'//'+location.host},
+			success:function(data){
+				if(data.result  && data.st){
+					login.initserviceTicket(data.st);
+				}else{
+					$('#tip').html(data.message);
+					return false;
+				}
+				
+			}
+		});
+	});
+	
+	$('.ui-input').on('keyup', function(event){
+		if(event.which == 13) {
+			$('#login-btn').trigger('click');
+		}
+	});
+});
+
+/**
+ * 票据认证
+ */
+login.initserviceTicket = function(st){
+	$.ajax({
+		type:'post',
+		url:'/loginService?serviceTicket='+st,
+		dataType:'json',
+		success:function(data){
+			if(data && data.success){
+				var u = data.user,
+					t = data.tenant,
+					avatar = u.avatar ? '/base/download/'+u.avatar.p3 : 'images/avatar.png';
+				var params = {
+						'uid':u.userId,
+						'eid':u.id,
+						'username':u.username,
+						'account':u.loginAccount,
+						'tenantKey':t.tenantKey,
+						'ETEAMSID':data.ETEAMSID,
+						'avatar':avatar
+					};
+				$('#myframe').attr("src","http://www.ebiaoge.com/transfer.jsp?"+$.param(params));
+				if(window.parent.loginCallback){
+					window.parent.loginCallback(params);			
+				}
+			}else{
+				 $("#tip").text(data.message);
+			}
+		}
+	});
+}
+</script>
+
+
+</body></html>

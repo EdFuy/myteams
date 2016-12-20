@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*typeahead下拉查询组件*/
+.typeahead-wrapper{
+	display: inline-block;
+	vertical-align:middle;
+	border: 1px solid #a3adba;
+}
+.typeahead-wrapper.hide{
+	display: none;
+}
+input.typeahead {
+	width: 120px;
+	height:28px;
+	margin: 0px;
+	height: 30px;
+    line-height: 20px;
+    padding: 4px 10px;
+	float:left;
+	border: none;
+}
+input.typeahead[data-entity="employee"]{
+	width:100px;
+}
+input.typeahead:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.typeahead-search{
+    position: relative;
+	height: 30px;
+	width: 20px;
+	padding: 3px;
+	margin:0px;
+	border:none;
+	background:transparent;
+	cursor: pointer;
+	float:right;
+}
+.typeahead-search:hover{
+	background:transparent;
+}
+.typeahead-search i{
+	color: #0088cc;
+	font-size: 14px;
+	line-height: 18px;
+}
+.tt-suggestion{
+	position:absolute;
+	z-index: 100;
+	height: auto;
+	max-height: 288px;
+	overflow:hidden;
+	padding:0px;
+	margin: 28px 0px 0px -1px;
+	display: block;
+	background-color: #ffffff;
+}
+.tt-suggestion p{
+	height:26px;
+	line-height: 20px !important;
+	width:160px;
+	margin:0px;
+	padding: 3px 5px;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tt-suggestion .employee{
+	width:120px;
+}
+.tt-suggestion p:hover{
+	color:#fff;
+	background: #0088cc;
+	cursor:pointer;
+}
+.tt-suggestion .employee img{
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+.tt-suggestion .employee.invite i{
+	font-size: 18px;
+	float: left;
+	margin-left: -5px;
+}
+.tt-suggestion .employee.invite span{
+	color: #96cafe;
+}
+#searchList .decoration-none{
+	text-decoration: none;
+}
+/*共享*/
+.entity-simpleshare .typeahead-wrapper{
+	width:atuo;
+}
+.entity-simpleshare select{
+	float: left;
+	width:85px;
+	border-width:0 1px 0 0;
+}
+.entity-simpleshare .sharetype-user,
+.entity-simpleshare .sharetype-dept{
+	float: left;
+}

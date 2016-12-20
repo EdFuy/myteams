@@ -1,0 +1,1376 @@
+<html lang="en" class="">
+ <head> 
+  <title>动态</title> 
+  <meta content="webkit" name="renderer" /> 
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" /> 
+  <meta content="initial-scale=1.0, user-scalable=no" name="viewport" /> 
+  <!-- <link type="text/css" rel="stylesheet" href="css/eteams.ui.css" /> --> 
+  <link href="css/eteams.ui.min.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link type="text/css" rel="stylesheet" href="css/eteams.ui.min.css" /> --> 
+  <!-- <link type="text/css" rel="stylesheet" href="css/plugins.css" /> --> 
+  <link href="css/plugins.min.css?v=1.1" rel="stylesheet" type="text/css" /> 
+  <link href="css/eteams.min1.css?v=1f6c37dde395eb63024a38bc63648cdd" rel="stylesheet" type="text/css" /> 
+  <link href="css/eteams.min2.css?v=1f6c37dde395eb63024a38bc63648cdd" rel="stylesheet" type="text/css" /> 
+  <link href="css/all-crm.min.css" rel="stylesheet" type="text/css" /> 
+  <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+ </head> 
+ <body class=""> 
+  <div id="header">
+   <header class="navigation" id="navigation">
+    <div class="user-panel dropdown dropdown-menu-toggle fl" id="user-panel">
+     <div href="index.html" class="user-avatar fl router">
+      <img src="images/avatar.png" class="j_user-currentAvatar" />
+     </div>
+     <div class="user-menu top-user-menu">
+      <a data-url="/portal" href="/portal" class="dropdown-toggle ds-ib-w router j_user_menu_portal"><p class="user-person "><span class="user-name ellipsis">wyb</span><i class="icon-angle-down"></i><span class="user-nameof hide">的</span></p><p title="天霸牛b" class="user-team ellipsis ">天霸牛b</p></a>
+      <div class="dropdown-user dropdown-div dropdown-shadow clearfix" id="j_dropUser" style="">
+       <div class="clearfix teampanel ">
+        <div class="teams-swich fl j_teams-swich ">
+         <span class="txt fl">切换团队：</span>
+         <div class="e-selectui dropdown fl dropdown-menu-toggle dropdown-gettext">
+          <a class="selectui-result dropdown-toggle ellipsis">天霸牛b<i class="icon-caret-down"></i></a>
+          <ul class="dropdown-menu border-dropdown eui-scroll" style="">
+           <li data-employee-id="4525552697072306457" class=""><a>我的团队1455526970310</a></li>
+           <li data-employee-id="4525670458124580496" class="active"><a>天霸牛b</a></li>
+          </ul>
+         </div>
+        </div>
+        <a class="fr btn btn-sm a-team btn-primary  j_joinOrCreate_dropdown">创建或加入团队</a>
+       </div>
+       <div class="clearfix">
+        <div class="mypanel fl">
+         <div class="avatar">
+          <img src="images/avatar.png" class="j_user-avatar" />
+         </div>
+         <div class="myoption">
+          <a href="index.html" class="btn btn-sm btn-block on j_to-myspace hide router">返回我的工作空间</a>
+          <a href="/feed/unfinish/all" class="btn btn-sm btn-block j_clickhide router">未完成事项</a>
+          <a href="/feed/watched/all" class="btn btn-sm btn-block j_clickhide router">关注事项</a>
+          <a href="/tag/privacy/list" class="btn btn-sm btn-block j_clickhide router">标签</a>
+          <a href="/profile" class="btn btn-sm btn-block j_clickhide router">个人设置</a>
+         </div>
+        </div>
+        <div class="otherspanel fl">
+         <div class="hint">
+          在此您可以切换到关注的人或下属的工作空间
+          <div class="user-space-search">
+           <input type="text" placeholder="人员搜索" class="form-control placeholder-sm" id="user-search" />
+           <a class="search-btn" id="user-search-icon"><i class="icon-search"></i></a>
+          </div>
+         </div>
+         <ul class="user-tab js_userTab clearfix nosub">
+          <li data-items="user_follow" href="/users/myfollow" class="router  j_user_follow j_clickhide"><a>我关注的人</a></li>
+          <li data-items="user_mysub" href="/users/myfollow/4525670458124580496/subordinate" class="router j_user_mysub j_clickhide j_top_mysubordinates hide"><a>我的下属</a></li>
+          <li data-items="user_org" href="/organization" class="router j_user_org j_clickhide active"><a>团队成员</a></li>
+         </ul>
+         <div class="user-list-container j_userlistScroll clearfix mCustomScrollbar _mCS_1 mCS_no_scrollbar" style="height: 694px;">
+          <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_1" tabindex="0">
+           <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" id="mCSB_1_container">
+            <ul class="user-list clearfix hide" id="user_follow">
+             <div style="margin-top:60px" class="ta-c">
+              <span>目前没有关注人,您可以点击<a class="j_clickhide j_addFollow">加关注</a>添加关注人！</span>
+             </div>
+            </ul>
+            <ul class="user-list clearfix hide" id="user_mysub"></ul>
+            <ul class="user-list clearfix" id="user_org">
+             <li class="user-item j_clickhide j_userItems" title="wyb"><a class="fl router" href="/blog/4525670458124580496" id="4525670458124580496"><img class="avatar" src="images/avatar.png" /><em class="ellipsis">wyb</em></a></li>
+             <div style="margin-top:80px" class="ta-c">
+              团队成员只有您一人，
+              <a class="invite-toggle">邀请同事</a>加入协作吧！
+             </div>
+            </ul>
+            <div class="user-follow-btns" id="user_followbtn" style="display: none;">
+             <a class="btn btn-sm j_clickhide j_addFollow w-80 mr-10">加关注</a>
+             <a href="/users/myfollow" class="btn btn-sm j_clickhide w-80 router">更多关注</a>
+            </div>
+           </div>
+           <div class="mCSB_scrollTools mCSB_1_scrollbar mCS-darkblue mCSB_scrollTools_vertical" id="mCSB_1_scrollbar_vertical" style="display: none;">
+            <div class="mCSB_draggerContainer">
+             <div oncontextmenu="return false;" style="position: absolute; min-height: 30px; top: 0px;" class="mCSB_dragger" id="mCSB_1_dragger_vertical">
+              <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+             </div>
+             <div class="mCSB_draggerRail"></div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="user-list-container clearfix j_user-search-container hide">
+          <ul class="user-list clearfix hide" id="search-result"></ul>
+          <div class="j_noSearchResult hide">
+           <p align="center">无搜索结果!</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="useroption clearfix">
+        <a href="/organization" class="btn btn-sm btn-primary j_clickhide router">团队成员设置</a>
+        <a class="btn btn-sm btn-danger invite-toggle">邀请同事</a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="j_navwrap" class="base-nav j_basenav">
+     <ul class="nav-ul j_nav_ul">
+      <li class="nav-homeli j_homeli dropdown dropdown-menu-toggle j_messageCount" id="j_message"><a data-url="/portal" href="/portal" class="router"><i class="graph graph-home"></i><em class="message-count animated bounce j_point hide"></em></a>
+       <ul class="dropdown-menu dropdown-menu-left" id="j_dropMessage" style="">
+        <li><a href="/blog/4525670458124580496/unread" class="router j_unreadblog"><span class="fr badge ml-10"></span><em class="graph graph1"></em>未读日报</a></li>
+        <li><a href="/portal/newitem" class="router j_newitem"><span class="fr badge ml-10"></span><em class="graph graph2"></em>未读事项</a></li>
+        <li><a href="/portal/newcomment" class="router j_newcomment"><span class="fr badge ml-10"></span><em class="graph graph3"></em>事项的新反馈</a></li>
+        <li><a href="/portal/newfinish" class="router j_newfinish"><span class="fr badge ml-10"></span><em class="graph graph4"></em>新完成事项</a></li>
+        <li><a href="/portal/atme" class="router j_atme"><span class="fr badge ml-10"></span><em class="graph graph5"></em>@我的新反馈</a></li>
+        <li class="divider"></li>
+        <li><a href="/messages/wechat" class="router j_wechat"><span class="fr badge ml-10"></span><em class="graph graph6"></em>聊天消息</a></li>
+        <li><a href="/portal/remind" class="router j_remind"><span class="fr badge ml-10"></span><em class="graph graph7"></em>提醒</a></li>
+        <li><a href="/portal/follow" class="router j_follow"><span class="fr badge ml-10"></span><em class="graph graph8"></em>关注申请</a></li>
+        <li><a href="/portal/applyJoin" class="router j_applyJoin"><span class="fr badge ml-10"></span><em class="graph graph9"></em>加入申请</a></li>
+        <li><a href="/portal/shareJoin" class="router j_shareJoin"><span class="fr badge ml-10"></span><em class="graph graph10"></em>共享申请</a></li>
+       </ul></li>
+      <li class="nav-blogli j_blog_NoAuthority hide"><a data-url="/blog" href="/blog" class="router"><i class="graph graph-blog"></i><span>日报</span></a></li>
+      <div class="nav-autolis j_baseautolis">
+       <li><a data-url="/tasks" href="/tasks" class="router j_modnav-task"><i class="graph graph-task"></i><span>任务</span></a></li>
+       <li><a data-url="/workflows" href="/workflows" class="router j_modnav-workflow"><i class="graph graph-flow"></i><span>审批</span></a></li>
+      </div>
+      <li class="j_activeli active"></li>
+      <li class="more-li dropdown dropdown-menu-toggle" id="more-menu"><a class="dropdown-toggle">更多应用<i class="icon-angle-down"></i></a>
+       <div class="sub-cate dropdown-menu j_pageActive" style="">
+        <div class="group">
+         <dl>
+          <dt>
+           汇报
+          </dt>
+          <dd>
+           <a data-url="/blog" href="/blog" class="router j_modnav-blog"><i class="graph graph-blog"></i><span>日报</span><span>工作日报</span></a>
+           <a data-url="/workreport" href="/workreport" class="router j_modnav-workreport"><i class="graph graph-report"></i><span>报告</span><span>计划报告</span></a>
+          </dd>
+         </dl>
+         <dl>
+          <dt>
+           CRM
+          </dt>
+          <dd>
+           <a data-url="/crms/customer" href="/crms/customer" class="router j_modnav-customers"><i class="graph graph-crm"></i><span>客户</span><span>客户库</span></a>
+           <a data-url="/crms/contact" href="/crms/contact" class="router j_modnav-contacts"><i class="graph graph-contact"></i><span>联系人</span><span>客户联系人</span></a>
+           <a data-url="/crms/saleChance" href="/crms/saleChance" class="router j_modnav-saleChances"><i class="graph graph-salechance"></i><span>商机</span><span>商机</span></a>
+           <a data-url="/crms/production" href="/crms/production" class="router j_modnav-production"><i class="graph graph-production"></i><span>产品</span><span>产品库</span></a>
+          </dd>
+         </dl>
+        </div>
+        <div class="group">
+         <dl>
+          <dt>
+           协作
+          </dt>
+          <dd>
+           <a data-url="/mainlines" href="/mainlines" class="router j_modnav-mainline"><i class="graph graph-goal"></i><span>项目</span><span>目标项目</span></a>
+           <a data-url="/tasks" href="/tasks" class="router j_modnav-task"><i class="graph graph-task"></i><span>任务</span><span>任务协作</span></a>
+           <a data-url="/calendar" href="/calendar" class="router j_modnav-calendar"><i class="graph graph-agenda"></i><span>日程</span><span>日程安排</span></a>
+           <a data-url="/documents" href="/documents" class="router j_modnav-document"><i class="graph graph-doc"></i><span>文档</span><span>知识文档</span></a>
+          </dd>
+         </dl>
+         <dl>
+          <dt>
+           审批
+          </dt>
+          <dd>
+           <a data-url="/workflows" href="/workflows" class="router j_modnav-workflow"><i class="graph graph-flow"></i><span>审批</span><span>审批流程</span></a>
+          </dd>
+         </dl>
+        </div>
+        <div class="group">
+         <dl>
+          <dt>
+           其他
+          </dt>
+          <dd>
+           <a data-url="/report/taskstatistics" href="/report/taskstatistics" class="router j_modnav-report"><i class="graph graph-stat"></i><span>统计</span><span>统计报表</span></a>
+           <a data-url="/info/wechat" href="/info/wechat" class="router j_modnav-wechat"><i class="graph graph-enterprise"></i><span>企业号</span><span>微信企业号</span></a>
+           <a data-url="/info/wechatservice" href="/info/wechatservice" class="router j_modnav-wechatservice"><i class="graph graph-wechatservice"></i><span>服务号</span><span>微信服务号</span></a>
+           <a data-url="/forms" href="/forms" class="router j_modnav-form"><i class="graph graph-formstat"></i><span>表单</span><span>业务表单</span></a>
+          </dd>
+         </dl>
+        </div>
+        <div class="base-nav-opt">
+         <a class="router entitybox-toggle" data-module="custmenu" data-id="new" id="top_menuset"><i class="icon-cog mr-10"></i>设置</a>
+        </div>
+       </div></li>
+     </ul>
+    </div>
+    <div class="quick-menu fr">
+     <ul class="nav nav-pills">
+      <li id="j_quickBuild" class="dropdown dropdown-menu-toggle quick-create-menu"><a><i class="graph graph-plus"></i></a>
+       <ul class="dropdown-menu dropdown-menu-right" style="">
+        <li><a class="entitybox-toggle" data-module="blog" data-target="#blog-textarea" data-id="new"><i class="graph graph-blog"></i>写日报</a></li>
+        <li><a id="task-create-fast" class="entitybox-toggle" data-target="#task-title" data-value="today" data-module="task" data-id="today"><i class="graph graph-task"></i>安排任务</a></li>
+        <li><a class="entitybox-toggle" data-module="agenda" data-target="#title" data-id="new"><i class="graph graph-agenda"></i>安排日程</a></li>
+        <li><a id="document-create-fast" class="" data-value="new" data-module="document" data-id="new"><i class="graph graph-doc"></i>上传文件</a></li>
+        <li><a id="workflow-create-fast" class="entitybox-toggle" data-value="new" data-module="workflow" data-id="new"><i class="graph graph-flow"></i>提交申请</a></li>
+        <li><a id="mainline-create-fast" class="" data-value="new" data-module="mainline" data-id="new"><i class="graph graph-goal"></i>添加项目</a></li>
+        <li class="divider"></li>
+        <li><a id="customer-create-fast" class="entitybox-toggle" data-target="#customer-name" data-value="new" data-module="customer" data-id="new"><i class="graph graph-crm"></i>新建客户</a></li>
+        <li><a id="contact-create-fast" class="entitybox-toggle" data-value="new" data-module="contact" data-id="0"><i class="graph graph-linkman"></i>新建联系人</a></li>
+        <li><a id="contactRecord-create-fast" class="" data-module="record" data-target="#title" data-id="new"><i class="graph graph-record"></i>客户联系记录</a></li>
+       </ul></li>
+      <li>
+       <div class="search-box">
+        <input type="text" placeholder="全局搜索" class="placeholder-sm" id="searchTop" />
+        <a class="search-btn" id="searchTopIcon"><i class="icon-search"></i></a>
+       </div></li>
+      <li class="popover-toggle"><a><i class="graph graph-qq"></i></a>
+       <div class="popover popover-bottom" style="opacity: 1; display: none;">
+        <div class="arrow"></div>
+        <div class="popover-content">
+         <strong class="fs-14">官方群</strong>
+         <p class="mv-5">196945930</p>
+         <a class="btn btn-sm btn-block btn-info" href="http://jq.qq.com/?_wv=1027&amp;k=24sGyfN" target="_blank">加入</a>
+        </div>
+       </div></li>
+      <li class="dropdown dropdown-menu-toggle eteams-quick"><a class="dropdown-toggle"><i class="graph graph-eteams"></i><i class="icon-angle-down"></i></a>
+       <ul class="dropdown-menu dropdown-menu-right border-dropdown" style="display: none;">
+        <li><a class="client-toggle">客户端下载</a></li>
+        <li class="wechat-toggle"><a>微信号</a>
+         <div class="popover popover-left">
+          <div class="arrow"></div>
+          <div class="popover-content">
+           <strong class="fs-14">微信号</strong>
+           <p class="mb-5">扫描二维码关注我们</p>
+           <img src="images/eteams_wechat.png" />
+          </div>
+         </div></li>
+        <li><a type="modal" class="invite-toggle">邀请同事</a></li>
+        <li><a type="modal" class="inviteNewTeam-toggle">推荐给好友</a></li>
+        <li><a class="j_joinOrCreate">创建或加入团队</a></li>
+        <li class="divider"></li>
+        <li><a href="/profile" class="router">个人设置</a></li>
+        <li><a href="/organization" class="router">团队成员设置</a></li>
+        <li><a href="/info" class="router">系统设置</a></li>
+        <li class="divider"></li>
+        <li><a id="help" target="_blank" href="http://www.eteams.cn/help">帮助</a></li>
+        <li><a class="advise-toggle">意见反馈</a></li>
+        <li><a href="/versioninfo" class="router">系统更新动态</a></li>
+        <li><a target="_blank" href="http://www.eteams.cn/product.html">产品介绍</a></li>
+        <li><a id="logout">退出系统</a></li>
+       </ul></li>
+     </ul>
+    </div>
+    <div id="module_notice" class="alert alert-danger notice-overlayer hide">
+     <a class="close">&times;</a>
+     <strong class="mr-5">提示:</strong>
+     <span>&quot;您的团队信息还未完善,点击&quot;<a href="/info" class="router">进入完善信息</a>&quot;页面&quot;</span>
+    </div>
+   </header>
+   <div class="hide" id="cloneDiv">
+    <li class="user-item j_clickhide j_userItems"><a class="fl router"><img class="avatar" /><em class="ellipsis"></em></a></li>
+    <a class="j_userItemsWechat fr wechat-toggle icon-comments" title="微信"></a>
+   </div>
+  </div> 
+  <div id="mainContainer">
+   <div class="main-hd mb-20">
+    <div class="title">
+     <i class="graph graph-dynamic"></i>系统更新动态
+    </div>
+   </div>
+   <div class="versioninfo">
+    <ul class="nav nav-tabs version-tabs">
+     <li data-type="pc" class="pc active"><a>pc版</a></li>
+     <li data-type="android" class="android"><a>安卓</a></li>
+     <li data-type="iphone" class="iphone"><a>iphone</a></li>
+     <li data-type="eiphone" class="eiphone"><a>iphone企业版</a></li>
+     <li data-type="windows"><a>windows客户端</a></li>
+     <li data-type="mac"><a>mac客户端</a></li>
+    </ul>
+    <div class="scrollwrapper bg-white active mCustomScrollbar _mCS_32" id="version-container" style="height: 530px;">
+     <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_32" tabindex="0">
+      <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container" id="mCSB_32_container">
+       <ul class="cbp_tmtimeline">
+        <li id="4525630141480613458"><time class="cbp_tmtime"><span class="year">2016</span> <span class="date">02-24</span></time>
+         <div class="cbp_tmicon">
+          2016
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.2.1</h2>
+          <p class="content"></p>
+          <ol>
+           <li>
+            <div>
+             <a href="http://www.eteams.cn/help/4525629526296645684" target="_blank">1.&nbsp;审批流程新增&quot;收回功能&quot;；</a>
+            </div></li>
+           <li>
+            <div>
+             <a href="http://www.eteams.cn/help/4525629617729245685" target="_blank">2. 审批流程支持&quot;自由退回&quot;：可选择退回到哪个节点 ；</a>
+            </div></li>
+           <li>
+            <div>
+             <a href="http://www.eteams.cn/help/4524895016938614373" target="_blank">3. 工作交接功能现在可以交接项目和任务；</a>
+             <br />
+             <a href="http://www.eteams.cn/help/4525629762940045686" target="_blank">4.&nbsp;日程现在支持展示多人日程和任务；</a>
+             <br />
+             <a href="http://www.eteams.cn/help/4525629846252645687" target="_blank">5. 新增岗位功能 ：可维护团队成员的岗位信息</a>；
+             <br />6.&nbsp;首页右侧添加快速创建日报功能 ；
+             <br />
+             <a href="http://www.eteams.cn/help/4525630040030945688" target="_blank">7.&nbsp;项目下新增日程页卡：在项目下可直接新增和关联日程啦，还可以切换视图；</a>&nbsp;
+             <br />8.&nbsp;手机web新增商机和产品模块 ：手机web可使用商机模块和产品模块的功能啦！
+            </div></li>
+          </ol>
+          <p></p>
+         </div></li>
+        <li id="4525399158081652404"><time class="cbp_tmtime"><span class="year">2016</span> <span class="date">01-28</span></time>
+         <div class="cbp_tmicon">
+          2016
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.2.0</h2>
+          <p class="content"></p>
+          <p>1. <a href="http://www.eteams.cn/help/4525403257135950076" target="_blank">首页改版，以消息、动态分享为中心</a>。&nbsp;</p>
+          <p>2. 手机web改版。&nbsp;</p>
+          <p>3. <a href="http://www.eteams.cn/help/4525403589776750079" target="_blank">考勤优化，新增外勤功能</a>。 &nbsp;</p>
+          <p>4.<a href="http://www.eteams.cn/help/4525403702087450080" target="_blank"> 表单明细表可选择展示序号</a>。 &nbsp;</p>
+          <p>5.<a href="http://www.eteams.cn/help/4524056656719150060" target="_blank"> 业务表单改版，将表单管理和数据上报整合在一起</a>。&nbsp;</p>
+          <p>6. <a href="http://www.eteams.cn/help/4525403766998550081" target="_blank">手机web新增云表单库模块</a>。</p>
+          <p>7. <a href="http://www.eteams.cn/help/4525403797619150082" target="_blank">日程任务互转关联</a>。&nbsp;</p>
+          <p>8. <a href="http://www.eteams.cn/help/4525403441549350077" target="_blank">日程可显示周次</a>。&nbsp;</p>
+          <p>9. <a href="http://www.eteams.cn/help/4525403466055850078" target="_blank">审批有权限编辑时可保存</a>。&nbsp;</p>
+          <p>10.修复若干已知问题。</p>
+          <p></p>
+         </div></li>
+        <li id="4525320980045758760"><time class="cbp_tmtime"><span class="year">2016</span> <span class="date">01-19</span></time>
+         <div class="cbp_tmicon hide">
+          2016
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.1.1</h2>
+          <p class="content"></p>
+          <p>1. <a href="http://www.eteams.cn/help/4525327998981550066" target="_blank">增加商机模块</a>&nbsp;</p>
+          <p>2. <a href="http://www.eteams.cn/help/4525327701092650065" target="_blank">增加产品模块</a>&nbsp;</p>
+          <p>3.<a href="http://www.eteams.cn/help/4525325243569450059" target="_blank"> 审批固定条件出口，新增职级、部门、明细子表统计项</a>。</p>
+          <p>4. <a href="http://www.eteams.cn/help/4525325405620150060" target="_blank">办结审批可以再次提交</a>&nbsp;</p>
+          <p>5. <a href="http://www.eteams.cn/help/4525325542786450061" target="_blank">审批模块增加流水号功能</a>&nbsp;</p>
+          <p>6. <a href="http://www.eteams.cn/help/4525325653886750062" target="_blank">表单增加表格布局控件&nbsp;</a></p>
+          <p>7. <a href="http://www.eteams.cn/help/4525325788697650063" target="_blank">运算控件监控运算控件,运算控件增加常量</a>&nbsp;</p>
+          <p>8. <a href="http://www.eteams.cn/help/4525325922048050064" target="_blank">组织成员优化（入职时间、修改下级、多部门）</a>&nbsp;</p>
+          <p>9. <a href="http://www.eteams.cn/help/4525282702128085437" target="_blank">手机web新增表情功能</a>&nbsp;</p>
+          <p>10.修复若干已知问题</p>
+          <p></p>
+         </div></li>
+        <li id="4525277967240655403"><time class="cbp_tmtime"><span class="year">2016</span> <span class="date">01-14</span></time>
+         <div class="cbp_tmicon hide">
+          2016
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.1.0</h2>
+          <p class="content">1、<a href="http://www.eteams.cn/help/4525282702128085437" target="_blank">评论、聊天、日报、分享新增表情功能</a></p>
+          <p>2、<a href="http://www.eteams.cn/help/4525282137086885431" target="_blank">新增审批综合统计功能</a>&nbsp;</p>
+          <p>3、<a href="http://www.eteams.cn/help/4525282423224485432" target="_blank">表单新增评分控件</a>&nbsp;</p>
+          <p>4、<a href="http://www.eteams.cn/help/4525282550018385433" target="_blank">任务统计报表新增明细查看</a>&nbsp;</p>
+          <p>5、<a href="http://www.eteams.cn/help/4525282714162185438" target="_blank">手机web新增日程相关事项关联功能</a>&nbsp;</p>
+          <p>6、<a href="http://www.eteams.cn/help/4525282749558785439" target="_blank">审批、任务、项目关联事项包括下属的、已完成</a>&nbsp;</p>
+          <p>7、<a href="http://www.eteams.cn/help/4525282867822378857" target="_blank">手机web项目、任务新增事项提醒功能</a>&nbsp;</p>
+          <p>8、<a href="http://www.eteams.cn/help/4525282660683885435" target="_blank">团队成员页面新增仅显示管理员功能</a>&nbsp;</p>
+          <p>9、<a href="http://www.eteams.cn/help/4525282825730378856" target="_blank">新建表单下增加云表单库链接</a>&nbsp;</p>
+          <p>10、<a href="http://www.eteams.cn/help/4525282799788778855" target="_blank">个人卡片中新增项目数据</a>&nbsp;</p>
+          <p>11、<a href="http://www.eteams.cn/help/4525282931487478858" target="_blank">团队表单非固定审批记录上次提交的审批人&nbsp;</a></p>
+          <p>12、新增文档中office和txt附件在客户端工具中直接编辑功能</p>
+          <p>13、修复若干已知bug</p>
+          <p></p>
+         </div></li>
+        <li id="4525014143008039370"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">12-14</span></time>
+         <div class="cbp_tmicon">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.9</h2>
+          <p class="content"></p>
+          <p>1、表单新增附件预览功能<br />2、新增退出讨论组的功能&nbsp;</p>
+          <span>3、修复部分表单不能提交</span>
+          <br />
+          <span>4、修复表单跨团队填写记录成游客&nbsp;</span>
+          <br />
+          <p></p>
+         </div></li>
+        <li id="4524914199545270181"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">12-03</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.8</h2>
+          <p class="content"></p>
+          <p>1. <a href="http://www.eteams.cn/help/4524919208788775281" target="_blank">系统中报告模块增加提醒功能</a></p>
+          <p>2. <a href="http://www.eteams.cn/help/4524919271684775282" target="_blank">任务增加关联表单功能&nbsp;，任务也可以自定义字段。</a></p>
+          <p>3. <a href="http://www.eteams.cn/help/4524653957217750226" target="_blank">表单运算控件增加常量设置</a>&nbsp;</p>
+          <p>4. 审批统计导出增加评论&nbsp;</p>
+          <p>5. 审批流程显示状态&nbsp;</p>
+          <p>6. 将任务的关注、督办放到更多菜单&nbsp;</p>
+          <p>7. 将项目中关注、督办、复制放到更多菜单</p>
+          <p>8. 手机web增加引导功能</p>
+          <p></p>
+         </div></li>
+        <li id="4524888903399756945"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">11-30</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.7</h2>
+          <p class="content">1. <a href="http://www.eteams.cn/help/4524895151900814374" target="_blank">子任务优化&nbsp;</a></p>
+          <p>2. <a href="http://www.eteams.cn/help/4524056656719150060" target="_blank">主动填写表单数据上报&nbsp;</a></p>
+          <p>3. <a href="http://www.eteams.cn/help/4524766070375150235" target="_blank">团队表单权限开放</a>&nbsp;</p>
+          <p>4. 手机web增加表单模块&nbsp;</p>
+          <p>5. 增加事项提醒和个人提醒功能&nbsp;</p>
+          <p>6. <a href="http://www.eteams.cn/help/4524894892837214372" target="_blank">增加报告统计功能</a>&nbsp;</p>
+          <p>7. <a href="http://www.eteams.cn/help/4524895016938614373" target="_blank">增加工作交接功能</a>&nbsp;</p>
+          <p>8.文档共享群组功能&nbsp;</p>
+          <p>9.上级和管理员可移动公共文件夹下的文档&nbsp;</p>
+          <p>10.修复若干已知问题</p>
+          <p></p>
+         </div></li>
+        <li id="4524827938352350496"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">11-23</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.6</h2>
+          <p class="content">1. <a href="http://www.eteams.cn/help/4524056899138850066" target="_blank">新增审批出口条件功能</a>。</p>
+          <p>&nbsp;审批路径支持根据审批表中的字段值路由到不同的节点啦！</p>
+          <p></p>
+         </div></li>
+        <li id="4524776367777245304"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">11-17</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.5</h2>
+          <p class="content">1. 增加日程与其他模块的关联关系&nbsp;</p>
+          <p>2. 审批表管理和表单管理合并&nbsp;</p>
+          <p>3. 支持同一账号登录多个团队&nbsp;</p>
+          <p>4. 增加项目统计功能&nbsp;</p>
+          <p>5. 手机web版改进&nbsp;</p>
+          <p>6. 优化系统短信和邮件的发送&nbsp;</p>
+          <p>7. 优化项目和任务的复制功能&nbsp;</p>
+          <p>8. 审批填写后 按 esc 增加提示&nbsp;</p>
+          <p>9.增加 服务号页面 </p>
+          <p></p>
+         </div></li>
+        <li id="4524664409072312219"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">11-04</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.4</h2>
+          <p class="content">1. 手机web数据上报<br />2. 项目复制<br />3. 任务复制<br />4. 增加下属表单菜单<br />5. 增加表单共享功能<br />6. 浏览器页面标题修改<br />7. 表单定时上报<br /></p>
+         </div></li>
+        <li id="4524603092585929247"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">10-28</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.3</h2>
+          <p class="content">1. 增加文档版本控制功能<br />2. 增加文档附件重新上传功能<br />3. 手机web文档模块新增参与人<br />4. 客户上传头像功能优化<br />5. 联系人增加上传头像按钮<br />6. 日程改造，增加评论反馈和消息提醒的功能<br />7. 审批表统计增加个人表单和成员表单<br />8. 全局搜索，可通过手机号和邮箱搜索到对应的人员，方便系统人员的查询<br />9. 子表打印优化(可以设置打印列等)<br />10.全局评论及反馈，下属的反馈应该包括所有下属，并且可筛选直接和间接及全部<br /></p>
+         </div></li>
+        <li id="4524542555087344049"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">10-21</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.2</h2>
+          <p class="content"> 1. pc微信聊天性能改造，让企业沟通更及时高效<br /> 2. 表格网手机web版发布<br /> 3. 项目下任务看板<br /> 4. 数据上报<br /> 5. 表单设置中新增监控控件<br /> 6. 手机web新版注册<br /> 7. 全局搜索支持多个关键字搜索<br /> 8. 客户与联系人支持头像上传<br /> 9. 提交联系记录后，一定的时间内允许修改<br /> 10. 客户回收站日志增加搜索功能<br /> 11. 手机web端增加联系人管理功能<br /> 12. 公共文件夹默认共享功能<br /></p>
+         </div></li>
+        <li id="4524487965685239211"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">10-14</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.1</h2>
+          <p class="content">1. 修复目标百分比计算问题<br />2. 修复客户领用申请消息问题 <br />3. 修复任务名里面如果是html代码，在首页工作动态，链接不正确<br />4. 修复加入申请页面缺少头像显示问题 <br />5. 修复事项的新反馈页面，评论内容没有换行显示问题 <br />6. 修复审批模块中人员选择控件与提交时选择成员中的放大镜按钮点击无效问题 <br />7. 修复企业微信聊天时，点击聊天框中的eteams服务号头像打开了空白卡片问题 <br />8. 修复审批到下一节点时没有推送“未完成审批”的消息 <br />9. 修复事项重复删除时，回收站彻底删除报错的问题<br />10. 修复首页动态中，打开评论，没有显示评论时上传的附件问题 <br />11. 修复首页待办审批不显示的问题<br />12. 修复客户关联项目的问题<br />13. 修复非管理员出现导出客户的问题 </p>
+         </div></li>
+        <li id="4524311246020067691"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">09-25</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">6.0.0</h2>
+          <p class="content">1. eteams 6 全新界面华丽来袭<br />2. 首页新增分享功能和快速反馈功能<br />3. 客户卡片新增与其它客户联系方式相同的提醒<br />4. 客户列表的查询条件，增加联系人联系手机号码查询<br />5. 客户名称输入框增加权限申请操作<br />6. 文档新增回收站<br />7. 任务新增快速新建功能<br />8. 全局搜索支持搜索人员<br />9. 流程确认节点调整，增加加签会签<br />10. 项目中新增关联现有任务、文档、客户、审批<br />11.修复若干bug</p>
+         </div></li>
+        <li id="4524232254761375901"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">09-15</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.9</h2>
+          <p class="content">1.云表单库的改造<br />2.流程审批连续审批人相同时，不需要重复审批<br />3.若干bug的修复</p>
+         </div></li>
+        <li id="4524158842623792746"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">09-02</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.8</h2>
+          <p class="content">1. 客户公海<br />2. 自动生成DEMO客户<br />3. 客户导入多联系人的改进<br />4. 文档新增共享给部门和共享给所有人</p>
+         </div></li>
+        <li id="4524068085032985752"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">08-27</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.7</h2>
+          <p class="content">1、新增表单模块。<br />2、修复若干bug。</p>
+         </div></li>
+        <li id="4523747792658255880"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">07-21</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.6</h2>
+          <p class="content">1.任务、目标新增回收站功能 <br />2.客户设置新增默认共享功能 <br />3.客户联系记录中可以直接打开联系人卡片 <br />4.标签功能优化：添加标签时点放大镜可选择标签 <br />5.文件夹按名称排序 <br />6.流程列表流程名称显示长度优化 <br />7.日报评论优化：不刷新页面时，保留输入内容 <br />8.修复若干bug</p>
+         </div></li>
+        <li id="4523687071240650279"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">07-14</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.5</h2>
+          <p class="content">1. 客户模块新增客户统计功能 <br />2. 选人控件优化：增大每页显示人数为500，便于全选 <br />3. 筛选控件优化：选中之后直接筛选 <br />4. 目标下的任务、文档新增筛选功能 <br />5. 目标排序优化：新增按照目标结束时间排序 <br />6. 全局的新建操作优化：支持快速新建联系记录 <br />7. 修复若干bug </p>
+         </div></li>
+        <li id="4523626603550344208"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">07-07</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.4</h2>
+          <p class="content">1. 客户列表的细节优化： 新增序号并支持支持输入页码翻页 <br />2. 客户导入优化：支持导入客户类型<br />3. 全局的新建操作优化：支持新建联系人<br />4. 客户高级搜索支持以联系人姓名为查询条件搜索客户数据<br />5. 流程模块金额框显示优化：增加千位符分隔符<br />6. 关联目标和任务优化：可关联已关闭的目标和已完成的任务<br />7. 修复若干bug</p>
+         </div></li>
+        <li id="4523566098715738699"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">06-30</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.3</h2>
+          <p class="content">1.文档模块支持拖动文件或文件夹功能<br />2.文档模块新增参与人功能<br />3.流程模块新增表单回收站功能<br />4.手机web版考勤中新增签到功能<br />5.标签功能优化：标签管理页面新增标签新建和标签搜索功能<br />6.客户模块操作优化：客户删除优化、联系人卡片细节改进和创建客户优化等<br />7.新建目标时默认分组名称修改：改为计划中、准备做、正在做和未分组<br />8.修复若干bug<br /></p>
+         </div></li>
+        <li id="4523463074051430448"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">06-18</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.2</h2>
+          <p class="content">1.eteams服务号发布<br />2.客户模块搜索优化：支持自定义字段搜索<br />3.文档模块支持在线编辑功能<br />4.任务模块新增子任务翻页功能<br />5.手机web版流程新增或签、确认、可编辑功能<br />6.日报补交优化：补交支持上传附件<br />7.人员卡片点击数字可进入详情<br />8.租户信息修改新增保存按钮<br />9.手机app推送开关（评论、日程、报告）<br />10.修复若干bug</p>
+         </div></li>
+        <li id="4523277781082538178"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">05-27</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.1</h2>
+          <p class="content">1.界面微改版，便于更容易聚焦中间工作区；<br />2.新增流程或签功能：启用或签后，同一个审批节点多人审批时，只要其中一人审批通过即可；<br />3.新增流程节点名称自定义功能；<br />4.新增流程审批环节类型为确认类，该类型的审批环节用户只能进行提交、不能退回；<br />5.新增任务视图切换功能：可选择到期日视图、列表视图和起始日视图；<br />6.新增模块应用导航设置：用户可以自行显示或隐藏哪些模块应用；<br />7.首页板块设置：用户可自行隐藏或显示哪些元素板块，例如不关心文档板块的可以隐藏，也可以到个人设置中显示启用；<br />8.新增可修改系统信息功能，包括可以修改团队名称；<br />9.新增客户与联系人自定义，联系提醒和外部动态，联系人纪念日,文件夹功能（手机web版）；<br />10.修复若干bug。</p>
+         </div></li>
+        <li id="4523161400001138436"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">05-14</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.5.0</h2>
+          <p class="content">1. 流程审批人可以修改表单数据（需在固定流程设置中加上），添加表单数据修改日志； <br />2. 客户合并（最多选择2个客户合并） <br />3. 新增任务锁定功能：创建人（或创建人的上级）能够锁定，锁定后参与人不能修改任务信息； <br />4. 新增明细子表金额合计大写功能； <br />5. 新增团队名称修改功能； <br />6. 注册帐号时可选择跳过手机号验证； <br />7. 表单统计和流程回收站中，点击流程名称可查看详情； <br />8. 文件下载服务器独立部署。</p>
+         </div></li>
+        <li id="4523082201755273468"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">05-05</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.15</h2>
+          <p class="content">1. 我的任务中将不包含我创建的任务；<br />2. 任务标记完成时，任务列表同步完成样式;<br />3. 首页默认Tab页在&quot;有更新的客户&quot;;<br />4. 修复任务参与人无法预览评论中附件的问题。</p>
+         </div></li>
+        <li id="4523038854844871312"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-30</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.14</h2>
+          <p class="content">1.优化表单统计图片、附件显示；<br />2.修复目标下事项任务排序的bug；<br />3.优化系统加载速度；<br />4.公告手机app消息推送；<br />5.任务统计增加管理员可以选择所有人的功能；</p>
+         </div></li>
+        <li id="4523022535269570149"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-28</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.13</h2>
+          <p class="content">1. 优化任务统计报表中新创建任务的统计方式;<br />2. 修复子任务详情显示undefined的问题;<br />3. 修复部分文档不能预览的问题;<br />4. 修复客户导出文件用低版本解压软件解压失败的问题;<br />5. 修复文件删除不了的bug；<br />6. 优化文档预览。</p>
+         </div></li>
+        <li id="4523013023178869429"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-27</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.12</h2>
+          <p class="content">1.报表中新增任务统计报表功能;<br />2.客户部分导出功能改进增加导出客户联系记录与相关自定义信息.<br /></p>
+         </div></li>
+        <li id="4522978642286567312"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-23</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.11</h2>
+          <p class="content">1. 流程新增云表单分类功能；<br />2. 修复流程加签后出现重复评论的问题；<br />3. 修复流程上级为空时，跳过审批节点的问题 ；<br />4. 修复客户不能删除联系人的问题 ；<br />5. 修复客户不能导出的问题；<br />6. 修复客户自定义打开空白的问题；<br />7. 修复企业号中创建人收不到新完成事项的问题 。<br /></p>
+         </div></li>
+        <li id="4522957815087964932"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-20</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.10</h2>
+          <p class="content">1.解决操作日志参与人显示重复的问题；<br />2.解决全局搜索反馈评论不显示的问题；<br />3.解决流程搜索无效的问题；<br />4.解决导入客户不显示手机号的问题<br />5.客户联系人添加标题和客户名称链接；<br />6.客户默认按照更新时间倒序排序。</p>
+         </div></li>
+        <li id="4522918329678862625"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-16</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.9</h2>
+          <p class="content">1.流程模块新增流程删除功能：管理员可在表单统计中删除流程；<br />2.流程模块新增流程回收站功能：管理员可选择彻底删除或还原流程；<br />3.流程图新增操作记录，便于查看审批动态；<br />4.任务新增起始时间；<br />5.客户模块完善联系提醒同步日程功能；<br />6.客户卡片和联系人卡片新增自定义功能：管理员可在设置中自定义字段；<br />7.调整客户卡片和联系人卡片布局；<br />8.客户模块新增联系人纪念日功能；<br />9.客户模块新增客户地图功能：可查看客户地图和周边客户；<br />10.客户部分的排序功能修改：可直接点击表格列头进行排序。</p>
+         </div></li>
+        <li id="4522857659432911499"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-09</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.8</h2>
+          <p class="content">新版文档在线预览功能：完美支持office文档、PDF、TXT和图片文件预览</p>
+         </div></li>
+        <li id="4522797229253006870"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">04-02</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.7</h2>
+          <p class="content">1.客户共享优化：可以直接共享给所有人或共享给指定部门<br />2.客户权限优化：取消客户创建人对客户的编辑权限<br />3.客户统计图优化：状态图改为漏斗图显示<br />4.表单管理中新增表单历史版本恢复功能<br />5.目标下任务优化：新增任务分组统计和快速新建任务功能<br />6.修复客户模块导出客户时通过迅雷下载出现乱码的问题<br />7.修复客户模块在safari浏览器上卡死的问题</p>
+         </div></li>
+        <li id="4522742892661338762"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">03-27</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.6</h2>
+          <p class="content">1.目标新增最新动态功能；<br />2.流程新增会签功能；<br />3.任务模块新增子任务关系解除功能；<br />4.修复企业号中看不到表单数据的问题；<br />5.表单控件显示优化；<br />6.优化消息推送方式：解决部分消息推送丢失的问题。</p>
+         </div></li>
+        <li id="4522724613937036682"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">03-24</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.5</h2>
+          <p class="content">1.客户模块的表格用户能自定义显示哪些列；<br />2.客户卡片上增加外部动态功能，可设关键字查询客户在互联网上的资讯；<br />3.修复客户模块导出客户时通过迅雷下载会出现乱码；<br />4.修复在弹出框中打开的客户详情里，联系记录下面的联系人显示无人员的问题。</p>
+         </div></li>
+        <li id="4522682535660733834"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">03-20</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.4</h2>
+          <p class="content">1.流程表单中新增附件控件和图片控件；<br />2.任务筛选新增按照到期日筛选功能；<br />3.@功能优化：评论时@在哪就显示在哪里；<br />4.流程明细子表新增全屏编辑功能；<br />5.修复找回密码时，170号段手机号提示格式错误的问题；<br />6.修复系统信息中注册用户数统计错误的问题；<br />7.修复公告权限问题：只有管理员可以发布公告。</p>
+         </div></li>
+        <li id="4522658708943295659"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">03-17</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.3</h2>
+          <p class="content">1.目标增加新建文档、客户和流程功能；<br />2.目标的任务增加按日期分类查看功能； <br />3.报告人员列表显示优化；<br />4.客户设置增加自定义联系类型功能；<br />5.客户部分增加联系提醒完成时可自动生成联系记录功能；<br />6.修复考勤统计中迟到早退次数错误的问题；<br />7.修复登录日志本周数据显示为0的问题。<br /></p>
+         </div></li>
+        <li id="4522615648966588696"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">03-12</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.2</h2>
+          <p class="content">1、修复登录日志无法查看的问题；<br />2、修复下属的客户数据不准确的问题；<br />3、修复我的客户数据不准确的问题。</p>
+         </div></li>
+        <li id="4272514104815369748"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">02-28</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.1</h2>
+          <p class="content">1.客户模块新增联系提醒功能<br />2.管理员新增修改上级部门的功能<br />3.手机web版新增微信模块<br />4.表单统计增加保存为模版功能<br />5.优化目标百分比显示<br />6.修复标签页面看不到客户的问题<br />7.修复评论转任务时，出现未读事项的问题<br />8.修复app删除客户后，已删除的客户不会进入回收站的问题</p>
+         </div></li>
+        <li id="4272376260078038917"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">02-13</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.4.0</h2>
+          <p class="content">1.文档模块新增文件夹功能：支持文档归类并默认把从其他模块上传的附件归类在一起；<br />2.固定流程中新增自由选择功能，让固定流程和自由流程灵活配合；<br />3.表单控件扩展：新增校验手机、邮箱、电话控件；<br />4.表单统计功能开放给所有用户；从而实现用户统计自己有权限的数据、管理员统计所有数据；<br />5.新建流程优化：滑入时给出提示；<br />6.重复日程设置优化：周重复时不锁定选定日期，支持自由勾选。</p>
+         </div></li>
+        <li id="4272364823927851970"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">02-11</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.8</h2>
+          <p class="content">1.客户模块增加批量删除及回收站功能；<br />2.客户模块增加批量取消共享功能；<br />3.解决在微信企业号中不能打开客户卡片的问题。<br /></p>
+         </div></li>
+        <li id="4272347891164151142"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">02-09</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.7</h2>
+          <p class="content">1.微信企业号新增考勤模块；<br />2.新增日程转任务功能；</p>
+         </div></li>
+        <li id="4272321818857350311"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">02-06</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.6</h2>
+          <p class="content">1.手机web版新增标签模块<br />2.表单统计新增高级搜索功能<br />3.客户模块增加全选功能<br />4.表单明细子表功能扩展:可以设置子表标题、详情和默认行数<br />5.修复日报上传附件无法预览的问题<br />6.修复手机web版日报系统工作记录中无法查看详情的问题<br />7.修复手机web版用户中心查看我关注的人的任务点击没效果的问题<br />8.修复企业号客户模块收到推送打开空白的问题<br />9.优化企业号日报推送：点击未读日报直接进入日报详情</p>
+         </div></li>
+        <li id="4272287140862903034"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">02-02</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.5</h2>
+          <p class="content">1.微信企业号增加审批流程、公告、报告、组织成员、日程、全局搜索、客户库应用；<br />2.手机web版增加报告、全局搜索、个人设置模块；<br />3.客户模块新增客户转移功能，可以批量修改客户经理，便于批量把所负责的客户转给其他同事；<br />4.客户模块新增客户设置功能，可以维护客户信息中的状态、类型、行业、地区等分类；<br />5.修复客户详情中不能修改网址的问题<br />6.所有用户退出公司之后，该租户下原有用户可以直接申请加入公司，无需审批</p>
+         </div></li>
+        <li id="4272236736496833353"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">01-27</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.3</h2>
+          <p class="content">1. 修复流程有关联事项时不能保存的问题;<br />2. 修复手机web版任务参与人权限问题;<br />3. 手机web版优化任务显示;<br />4. 手机web版优化考勤月份选择效果.<br /></p>
+         </div></li>
+        <li id="4272226808005732664"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">01-26</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.2</h2>
+          <p class="content">1. 修复表单统计的合计中去掉草稿流程数据<br />2. 修复不能修改负责人的问题<br />3. 个人信息中姓名为空时增加提示</p>
+         </div></li>
+        <li id="4272224578448032299"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">01-25</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.1</h2>
+          <p class="content">1. 微信企业号上线文档模块；<br />2. 手机web版上线考勤模块；<br />3. 优化流程表单统计功能；<br />4. 优化上个版本中部分使用体验；</p>
+         </div></li>
+        <li id="4272192214702631065"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">01-22</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.3.0</h2>
+          <p class="content">1. 正式发布微信企业号功能，eteams可直接与企业号对接，第一版上线任务、日报和目标应用模块；<br />2. 手机web版上线客户模块，公告模块；<br />3. 流程表单添加统计功能；<br />4. 解决任务负责人修改时日志没有显示人名的问题.<br />5. 修复反馈评论转任务不成功的问题。</p>
+         </div></li>
+        <li id="4272174878261429829"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">01-20</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.2.1</h2>
+          <p class="content">1. 修复任务标记未完成无效的问题；<br />2. 修复流程筛选中有重复表单的问题；<br />3. 修复查阅情况显示不正常的问题；</p>
+         </div></li>
+        <li id="4272158785003528592"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">01-18</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.2.0</h2>
+          <p class="content">1.新完成事项和标签页面的目标增加进入目标相关事项功能；<br />2.优化提醒数字；<br />3.首页更新的客户增加未读客户；<br />4.首页新建任务和客户时，光标自动定位到输入框；<br />5.修复文档预览功能；<br />6.全新手机web版系统；<br />7.客户卡片中增加参与人功能，并有相应的权限控制及提醒。<br /></p>
+         </div></li>
+        <li id="4272033853718585829"><time class="cbp_tmtime"><span class="year">2015</span> <span class="date">01-04</span></time>
+         <div class="cbp_tmicon hide">
+          2015
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.1.3</h2>
+          <p class="content">1.增加手机号和邮箱校验:人员修改手机和邮箱时，校验在当前租户中是否被占用<br />2.修复未读反馈点击全部已阅和已阅无效的问题<br />3.修复固定流程取不到上级的问题<br />4.修复标签展开更多后，点击自动收起的问题</p>
+         </div></li>
+        <li id="4271990327744052727"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">12-30</span></time>
+         <div class="cbp_tmicon">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.1.2</h2>
+          <p class="content">1.修复报告不能填写的问题<br />2.修复上级无法修改已离职下属的客户的问题<br />3.修复同一租户下，同时导入客户会串的问题<br /></p>
+         </div></li>
+        <li id="4271978592114952061"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">12-28</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.1.1</h2>
+          <p class="content">1.新完成事项和标签页面的目标增加进入目标相关事项功能；<br />2.优化提醒数字；<br />3.首页更新的客户增加未读客户；<br />4.首页新建任务和客户时，光标自动定位到输入框；<br />5.一些样式优化。<br /></p>
+         </div></li>
+        <li id="4271955313888251003"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">12-25</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.1.0</h2>
+          <p class="content">1.新建客户的去重功能：提醒是否已存在同样名称的客户，避免重名 ；<br />2. 联系人名称字数限制加长；<br />3.消息提醒中，提醒数字实时更新 ；<br />4.区分我的标签和公共标签显示 ；<br />5.区分已完成和未完成的任务显示 ；<br />6.优化目标下拖动任务排序功能：拖动排序时，不会再滑出任务详情 ；<br />7.流程统计中增加组织自定义表单的使用统计； <br />8.部分页面滚动条优化；<br />9.底层架构变化调整。</p>
+         </div></li>
+        <li id="4271765812567878561"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">12-04</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.0.2</h2>
+          <p class="content">1.修复目标已完成和新建任务分组消失的问题 ;<br />2.修复考勤明细页面缺少标题的问题 ;<br />3.修复全部人员查阅过公告之后，点击未阅人员时提示：无未阅人员 ;<br />4.增加表单排序功能，可拖动排序 ;<br />5.修复目标里中新建任务时，容易重复新建的问题 ;<br />6.修复注册验证链接错误问题 ;<br />7.增加表单排序功能 ;<br />8.修复微信联系人小屏幕串位的问题;<br />9.修复新建流程时，表单中点击更多被挡住的问题；<br />10.修复IE不能修改头像的问题。</p>
+         </div></li>
+        <li id="4271744079537577222"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">12-01</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.0.1</h2>
+          <p class="content">1.优化任务菜单，未读事项自动-1；<br />2.优化无标签时，提示文字；<br />3.目标百分比bug修复；<br />4.修复流程申请人名称较长时，显示重叠问题；<br />5.未完成事项中，去掉了文档和客户。</p>
+         </div></li>
+        <li id="4271739598185896539"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">11-30</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">5.0.0</h2>
+          <p class="content">全新的UI视觉界面，总体上包括有：<br />1. 整体界面布局摆放调整，完全体现企业中的个人用户使用角色；<br />2. 集中的消息提醒（右上角的铃铛）并有明显的数字显示；<br />3. 各个模块的右侧弱化，提供快速的统计分析功能点；<br />4. 各模块的事项详情页面统一采用右侧浮出，方便快速切换查看；<br />5. 原左侧关注和组织成员统一缩起，放到左上角的自己头像和姓名来切换；<br />6. 查看关注的人或下属的工作模块，采用更醒目的色条加以区分。</p>
+         </div></li>
+        <li id="4271618662196179981"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">11-16</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.1.5</h2>
+          <p class="content">1. 解决客户数量较多时导出不成功的问题；<br />2.解决文档列表文字重复的问题；<br />3.解决批量共享时部分数据不成功的问题；<br />4.首页事项添加日程个数；</p>
+         </div></li>
+        <li id="4271515986209343759"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">11-04</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.1.4</h2>
+          <p class="content">1. 任务排序功能优化：<br /> 每次打开时记录上一次排序方式；<br /> 增加根据创建时间和到期时间最新和最早排序；<br />2. 任务统计修改（未完成修改为仅统计今天未完成）；<br />3. 目标模块增加列表视图；<br />4. 客户模块增加批量导入联系人功能；<br />5. 客户模块增加可导出全部客户功能，仅限于管理员操作；<br />6. 工作时长中增加签到签退地址。<br /></p>
+         </div></li>
+        <li id="4271454517713940277"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">10-28</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.1.3</h2>
+          <p class="content">1.任务增加统计功能；<br />2.报告增加共享功能；<br />3.公告功能优化（可以选择修改公告或者发布新公告）<br />4.修复微信不能连续发送附件的bug；<br /></p>
+         </div></li>
+        <li id="4271432710687139056"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">10-26</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.1.2</h2>
+          <p class="content">1. 首页添加日程模块，方便快速查看当天日程安排及新建日程；<br />2. 优化表单管理操作界面；<br />3. 新建或修改日程时，添加手机客户端推送消息提醒；<br />4. 修复上个版本手机app登录管理员权限缺失的bug；<br />5. 设置固定流程时，可以根据“申请人”条件来获取审批处理人。</p>
+         </div></li>
+        <li id="4271376785092995822"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">10-19</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.1.1</h2>
+          <p class="content">1.报告增加打印及导出功能；<br />2.流程筛选增加可选择自定义的表单；<br />3.批量操作性能优化；<br />4.客户删除添加权限控制；<br />5.优化IE浏览器下文档预览功能。<br /></p>
+         </div></li>
+        <li id="4271313403411813509"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">10-12</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.1.0</h2>
+          <p class="content">1. 增加客户列表新建联系人权限控制;<br />2. 增加文档预览功能;<br />3. 增加工作时长统计功能;<br />4. 表单控件的优化;<br />5. 部分性能优化。</p>
+         </div></li>
+        <li id="4271187385261810700"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">09-28</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.0.5</h2>
+          <p class="content">1. 任务和流程添加打印功能；<br />2. 首页各个板块在默认Tab没有数据的时候会自动切换到有数据的Tab页；<br />3. 解决默认表单删除后相关历史流程无法打开的问题；<br />4. 添加超时后自动登录功能；<br />5. 其他细节调整。</p>
+         </div></li>
+        <li id="4271136293250008948"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">09-21</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.0.4</h2>
+          <p class="content">1. 客户列表可以直接展开查看联系人；<br />2. 客户交流及联系记录增加了联系类型和联系人；<br />3. 增加了联系人卡片及联系记录；<br />4. 增强了客户高级搜索功能；<br />5. 初始的6个流程表单添加停用和删除功能；<br />6. 添加公共标签功能，可用于所有模块；<br />7. 修复记住密码时间太短的问题；<br /></p>
+         </div></li>
+        <li id="4271096202788707711"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">09-17</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.0.3</h2>
+          <p class="content">1. 解决app提交流程顺序错误的问题；<br />2.新增固定流程功能；<br />3. 调整优化Safari下流程审批显示样式；<br />4. 优化表单定义使用体验，添加控件说明；<br />5. 解决日报和评论中的网址过滤不正确的问题；<br />6.调整@我的事项右侧评论只显示未读内容；<br />7. 解决客户导入功能页面显示异常的问题。</p>
+         </div></li>
+        <li id="4271077071900607060"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">09-15</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.0.2</h2>
+          <p class="content">1. 解决主页中的目标删除后页面跳转的问题；<br />2. 流程界面细节优化；<br />3. 人员卡片可以设置多上级和助理；<br />4. 解决上个版本中的出差申请流程事项内容保存问题；<br />5. 表单设计功能添加指导说明。</p>
+         </div></li>
+        <li id="4271022582125452910"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">09-08</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.0.1</h2>
+          <p class="content">1. 解决用户名中包含特殊字符导致无法登陆的问题；<br />2. 解决子任务重复创建及链接地址重复的问题；<br />3. 解决下属列表中的bug；<br />4. 解决新版表单模块中的部分bug；<br />5. 部分页面UI细节调整。</p>
+         </div></li>
+        <li id="4270981268195552092"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">09-03</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">4.0.0</h2>
+          <p class="content">1. 新增自定义表单功能；<br />2.独立认证服务；<br />3.升级系统UI；<br />4. 修复上个版本中的bug。</p>
+         </div></li>
+        <li id="4270888518062315095"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">08-24</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.12.2</h2>
+          <p class="content">1. 优化报告模块页面显示、增加每份报告的查阅情况和操作日志；并对未到的日期不允许填写报告；<br />2. 报告右侧人员可以按照下属层级展开，方便逐层查看所有下属的报告；<br />3. 日程模块添加农历显示；<br />4. 新增@功能，各模块中的反馈评论中可以用@提醒其他人并在左侧消息提示增加“@我的事项”统一查阅。</p>
+         </div></li>
+        <li id="4270859179735689725"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">08-21</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.12.1</h2>
+          <p class="content">1. 工作报告添加操作日志和查阅情况；<br />2. 工作报告附件上传优化；<br />3. 解决流程删除后订阅的消息统计数据依然存在的问题；<br />4. 解决通过手机邀请进来的用户员工邮箱字段会被设置成手机号码的问题；<br />5. 优化查询筛选速度慢的问题；</p>
+         </div></li>
+        <li id="4270832473739287434"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">08-17</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.12.0</h2>
+          <p class="content">1. 新增工作报告模块；<br />2. 优化关联对象功能，添加关联可以按模块添加；<br />3. 优化全局搜索查询速度；<br />4. 优化左侧消息订阅功能。<br />5. 修复上个版本中日程模块的bug。</p>
+         </div></li>
+        <li id="4270772679861383430"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">08-10</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.11.1</h2>
+          <p class="content">1. 日报统计增加补交日报类型统计；<br />2. 优化日程性能，修复日程模块BUG；<br />3. 优化日报查询性能；<br />4. 日报添加“回复我的”功能；<br />5. 优化流程查询性能；</p>
+         </div></li>
+        <li id="4270707424555379177"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">08-03</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.11.0</h2>
+          <p class="content">1. 添加日程模块：可以安排每一天的具体时间工作、以及了解同事的时间安排和占用情况；<br />2. 优化日报查询性能；<br />3. 优化关联目标时的查询性能；<br />4. 优化客户查询性能；<br />5. 解决客户行业、地区、状态、类型不能查询的问题；<br />6. 解决上传文档时可以重复添加共享人的问题</p>
+         </div></li>
+        <li id="4270652370088776316"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">07-28</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.10.0</h2>
+          <p class="content">1. 新增工作首页模块，方便比较快速全面的了解工作动向；<br />2. 任务模块添加子任务功能，可用来分解为细化工作进展；；<br />3. 未读反馈调整为新反馈事项，并同时变更中间列表为未读反馈对应的事项；<br />4. 公司公告从原来位置移动至工作首页；<br />5. 修复上个版本人员选择时滚动条的问题；<br />6. 修复新反馈事项已阅无效问题；</p>
+         </div></li>
+        <li id="4270587518267273456"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">07-19</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.9.0</h2>
+          <p class="content">1. 新增客户导入功能，可以通过excel批量导入客户数据；<br />2. 新增群组功能，可以将经常选择的人员加入到群组，方便快速选择；<br />3. 优化日报中的附件和图片查询；<br />4. 完善目标模块部分细节操作。</p>
+         </div></li>
+        <li id="4270465340923480920"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">07-06</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.8.0</h2>
+          <p class="content">1. 日报可以添加附件；<br />2. 日报中的图片可以以缩略图方式显示；<br />3. 工作目标添加默认分组；<br />4. 修复上一个版本中的一些小问题；</p>
+         </div></li>
+        <li id="4270414769381478853"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">06-30</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.7.0</h2>
+          <p class="content">1. 增强并优化原工作主线功能，改名为工作目标；<br />2. 工作目标下任务添加分组功能；<br />3. 工作目标下的事项权限调整；<br />4. 标签功能私有化，每个人只能看到自己的标签；<br />5. 右下角的微信小窗口默认可以自动隐藏；<br />6. 解决添加关联的时候事项类型重复的问题；<br />7. 滚动条速度调慢；<br />8. 客户信息中的网址可以直接打开；<br />9. 微信聊天窗口可以直接复制截图上传图片；<br />10. 评论转发为任务时，将评论内容为转发为任务描述；</p>
+         </div></li>
+        <li id="4270305397205797959"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">06-18</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.6.0</h2>
+          <p class="content">1.考勤轨迹添加签退信息；<br />2. 解决评论转任务缺少转发次数的问题；<br />3. 解决点击组织成员里没有关注的人时页面会跳转到他的日报页面的问题；<br />4.其他细节优化。</p>
+         </div></li>
+        <li id="4270259881153902950"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">06-13</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.5.9</h2>
+          <p class="content">1. 添加离职人员返聘功能；<br />2. 邀请功能添加邀请URL复制；<br />3. 租户空间使用情况添加图形显示；<br />4. 修复流程中的图片附件不能跟随流程一起流转的问题；<br />5. 解决android老版本检测不到升级的问题；</p>
+         </div></li>
+        <li id="4270251263786641132"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">06-11</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.5.8</h2>
+          <p class="content">1. 添加任务紧急程度功能；<br />2. 添加任务拖拽功能；<br />3. 添加直接通过URL进行邀请的功能；<br />4. 日报统计中加入可选择部门筛选的功能；<br />5. 修复上级不能修改下属任务负责人的问题；</p>
+         </div></li>
+        <li id="4270227546965281876"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">06-08</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.5.7</h2>
+          <p class="content">1. 解决上级可以操作下级待办流程的问题；<br />2. 解决不能签退的问题；<br />3. 优化考勤报表功能，可通过工作日日期选择统计考勤次数；<br />4. 注册邀请的细节优化；<br />5. 手机web版的更多应用中样式调整。</p>
+         </div></li>
+        <li id="4270204986349517797"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">06-05</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.5.6</h2>
+          <p class="content">1. 优化手机web版的注册过程和一些提示；<br />2. 解决1.2.2及之前版本的APP注册由于api兼容的问题；</p>
+         </div></li>
+        <li id="4270178010036983280"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">06-01</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.5.5</h2>
+          <p class="content">1. 提供手机web基础版，可以在不下载APP客户端的情况下快速登录、注册、邀请激活，以及企业微信沟通、任务建立分配以及日报的填写；<br />2. 文档库主列表即“我的文档”加上“共享给我的文档”，方便一并浏览所有与本人相关的文档；<br />3. 报表统计中日报统计和任务统计的页面调整，方便屏幕小的情况也能够完整查看；<br />4. 上级可以修改下属所负责客户负责人，便于转移客户权限；<br />5. 通过“新消息”右侧可以查看通知公告信息；<br />6. 部分模块筛选中选择人员默认加上用户自己；</p>
+         </div></li>
+        <li id="4270177961542883271"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">05-24</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.5.0</h2>
+          <p class="content">1. 支持用手机号也可以注册和邀请；<br />2. 重新优化注册和邀请过程的功能；<br />3. 增加在职人员可以自行退出团队，方便加入另外一个团队；<br />4. 任务、文档、客户、流程等每个模块中的搜索为该模块所有内容的全局搜索；<br />5. 报表统计增加日报统计，方便查阅每一位关注的人或下属每一天日报的填写情况；<br />6. 后台管理系统和技术架构的部分调整；<br />7. 其他问题和bug的处理；</p>
+         </div></li>
+        <li id="4269865260487163988"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">04-27</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.3.0</h2>
+          <p class="content">1. 新增企业微信小窗口聊天功能，让沟通更加方便；<br />2. 微信聊天中添加eteams服务号，在使用过程可直接咨询eteams服务人员或反馈建议意见；<br />3. 新员工加入添加push推送，方便快速与新同事沟通和事项互动；<br />4. chrome、firefox和ie10以上浏览器支持拖拽上传附件；<br />5. 修改（任务负责人、文档负责人、客户经理）后将负责人加入到共享人列表中，方便之前的负责人可回顾此事项；<br />6. 主线下拉选择的时候默认列出当前用户有权限查看的10条主线，其中最近选择过的放在前面；<br />7. 细节处理和bug修复、以及兼容IE8的部分细节界面；</p>
+         </div></li>
+        <li id="4269797820705321753"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">04-18</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.2.0</h2>
+          <p class="content">1. 新建任务的右侧界面调整为两个字段，简化建立的过程；<br />2. 初次使用时在各个模块给出相应的提示，方便快速启用和与同事互动；<br />3. 关注的人和组织成员根据成员情况给出相应的邀请和关注提示；<br />4. 邮件模版全新调整；<br />5. 修复客户提出的一些bug；<br />6. 手机短信通知，在邀请的地方加入手机号，并有相应的api<br />7. GPS定位信息；<br />8. 完善新同事加入提醒对应的api<br />9. 更多细节调整以及bug的优化处理；</p>
+         </div></li>
+        <li id="4269814708222686335"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">04-06</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.1.5</h2>
+          <p class="content">1. 增加日报搜索功能；<br />2. 优化找回密码功能；<br />3. 增加新同事加入的提醒，方便快速与新同事互动沟通；<br />4. 快速选择人员的时候就可以直接邀请同事加入；<br />5. 任务新建完成中快速描述任务详情；<br />6. 邀请同事加入时可直接输入手机号进行提醒查阅激活邮件；<br />7. 加入QQ群咨询链接，方便快速与服务人员沟通；<br />8. 网站支持IE6浏览<br />9. 其他细节以及bug问题的优化和处理；</p>
+         </div></li>
+        <li id="4269814699870586334"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">03-30</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.1.2</h2>
+          <p class="content">1. 增加流程提醒到所有办理人；<br />2. 增加企业微信沟通内容以及事项反馈内容中网页url地址的解析，方便直接点击；<br />3. 优化邮件模版；<br />4. 网站自适应屏幕尺寸和手机屏幕；<br />5. 我的任务界面中今明增加更直接的提示，方便用户第一次使用并指导；<br />6. 企业微信中的附件自动归集到文档中，使文档成为团队完整的知识网盘库；<br />7. 其他细节以及bug问题的优化和处理；</p>
+         </div></li>
+        <li id="4269573078871799112"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">03-25</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.1.0</h2>
+          <p class="content">eteams对外正式版本发布，并在内测版的基础上优化处理：<br />1. bug处理；<br />2. 使用引导页面调整；<br />3. 增加移动下载<br />4. 独立的网站；</p>
+         </div></li>
+        <li id="4269573074832699111"><time class="cbp_tmtime"><span class="year">2014</span> <span class="date">02-22</span></time>
+         <div class="cbp_tmicon hide">
+          2014
+         </div>
+         <div class="cbp_tmlabel">
+          <h2 class="version">3.0.0</h2>
+          <p class="content">新版的eteams内测版本发布，在eteams2.0版本基础上增加了：<br />1. 工作日报模块：形成每位人员的每天工作汇报和记录汇总；<br />2. 任务协作独立为日常事务的协作；<br />3. 文档库：建立团队统一的知识网盘，快速上传、分享、检索；<br />4. 客户及联系人库：统一保存团队的外部资源库和联系方式，并实时记录每一次的沟通和跟踪进展情况；<br />5. 审批流程：轻松的行政审批和自定义流程审批环节；<br />6. 移动考勤：根据地理位置自动形成每月的上下班工作考勤轨迹；<br />7. 企业微信：建立团队内的多终端同步的沟通平台；<br />8. 基础和权限机制；<br />9. 产品整个操作和UI界面全新变化。</p>
+         </div></li>
+       </ul>
+       <div class="loading_small hide" id="version-loading">
+        <span>正在加载数据，请稍后...</span>
+       </div>
+      </div>
+      <div class="mCSB_scrollTools mCSB_32_scrollbar mCS-darkblue mCSB_scrollTools_vertical" id="mCSB_32_scrollbar_vertical" style="display: block;">
+       <div class="mCSB_draggerContainer">
+        <div oncontextmenu="return false;" style="position: absolute; min-height: 30px; height: 11px; top: 0px; display: block; max-height: 520px;" class="mCSB_dragger" id="mCSB_32_dragger_vertical">
+         <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+        </div>
+        <div class="mCSB_draggerRail"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hide">
+     <li id="version-clone"><time class="cbp_tmtime"><span class="year"></span> <span class="date"></span></time>
+      <div class="cbp_tmicon"></div>
+      <div class="cbp_tmlabel">
+       <h2 class="version"></h2>
+       <p class="content">新版本发布</p>
+      </div></li>
+     <li id="noresult"><time class="cbp_tmtime"><span class="year">2016</span> <span class="date">02-29</span></time>
+      <div class="cbp_tmicon">
+       2016
+      </div>
+      <div class="cbp_tmlabel">
+       <h2 class="version">尚未发布</h2>
+       <p class="content">敬请期待</p>
+      </div></li>
+    </div>
+   </div>
+  </div> 
+  <div class="j_stretchBox module-detail-slide" id="entitySlider"></div> 
+  <div class="goto-top graph hide"></div> 
+  <script src="js/libs.js"></script> 
+  <script src="js/plugins.js?v=1.1"></script> 
+  <script type="text/javascript">var ETEAMSID = '093d71e22d28e86db7fb1ef0371d7e1b'; var TEAMS = {"service":{"base":"https://www.eteams.cn","crm":"https://www.eteams.cn/crmapp","passport":"https://passport.eteams.cn","biaoge":"http://www.ebiaoge.com","websocket":"mc.eteams.cn:8443","mcConnector":"mc.eteams.cn:5023/mc","mcManager":"https://www.eteams.cn/manager"},"currentUser":{"username":"wyb","mobile":"18228088215","status":"normal","department":{"name":"\u5929\u9738\u725Bb","id":"4525670458133380497"},"secLevel":0,"authorities":[{"authority":"ROLE_USER"},{"authority":"ROLE_ADMIN"}],"activeDate":1456704581235,"loginAccount":"18228088215","loginCount":0,"rank":"boss","admin":true,"name":"wyb","id":"4525670458124580496","userId":"4525552693524058287","employeeId":"4525670458124580496"},"currentTenant":{"tenantKey":"t899ep0gpz","tenantName":"\u5929\u9738\u725Bb","status":"probation","maxLicense":10,"usedLicense":1,"maxSpace":1000,"usedSpace":0,"dateCreated":1456704581000,"dateUpdated":1456704581000,"contact":"wyb","mobile":"18228088215","available":true},"globalConfig":[],"userConfig":[{"configKey":"guide.task.manager","configValue":"1","id":"4525670458157880498"},{"configKey":"guide.task.participant","configValue":"1","id":"4525670458157880499"},{"configKey":"guide.document.share","configValue":"1","id":"4525670458157880500"},{"configKey":"guide.customer.share","configValue":"1","id":"4525670458157880501"},{"configKey":"guide.workflow.operation","configValue":"1","id":"4525670458157880502"},{"configKey":"guide.workflow.createform","configValue":"1","id":"4525670458157880503"}],"passportUrl":"https://passport.eteams.cn","siblingsTenants":[{"employeeId":"4525552697072306457","tenantKey":"tb1yh58m28","isCurrent":false,"tenantName":"\u6211\u7684\u56E2\u961F1455526970310"},{"employeeId":"4525670458124580496","tenantKey":"t899ep0gpz","isCurrent":true,"tenantName":"\u5929\u9738\u725Bb"}],"noSubordinates":true,"nowTime":1456704582979,"eteamsHost":"https://www.eteams.cn","version":"1f6c37dde395eb63024a38bc63648cdd"};var crmContext = {"remoteDownloadUrl":"http://dl.eteams.cn"};var empMenusContext = [{"menuName":"首页","empid":4525670458124580496,"menuStatus":1,"orderIndex":0,"id":"0"},{"menuName":"任务协作","empid":4525670458124580496,"menuStatus":1,"orderIndex":1,"id":"1"},{"menuName":"审批流程","empid":4525670458124580496,"menuStatus":1,"orderIndex":2,"id":"2"},{"menuName":"目标项目","empid":4525670458124580496,"menuStatus":0,"orderIndex":3,"id":"3"},{"menuName":"知识文档","empid":4525670458124580496,"menuStatus":0,"orderIndex":4,"id":"4"},{"menuName":"客户库","empid":4525670458124580496,"menuStatus":0,"orderIndex":5,"id":"5"},{"menuName":"工作日报","empid":4525670458124580496,"menuStatus":0,"orderIndex":6,"id":"6"},{"menuName":"日程安排","empid":4525670458124580496,"menuStatus":0,"orderIndex":7,"id":"7"},{"menuName":"计划报告","empid":4525670458124580496,"menuStatus":0,"orderIndex":8,"id":"8"},{"menuName":"统计报表","empid":4525670458124580496,"menuStatus":0,"orderIndex":9,"id":"9"},{"menuName":"微信企业号","empid":4525670458124580496,"menuStatus":0,"orderIndex":10,"id":"10"},{"menuName":"业务表单","empid":4525670458124580496,"menuStatus":0,"orderIndex":11,"id":"11"},{"menuName":"客户联系人","empid":4525670458124580496,"menuStatus":0,"orderIndex":12,"id":"12"},{"menuName":"微信服务号","empid":4525670458124580496,"menuStatus":0,"orderIndex":13,"id":"13"},{"menuName":"商机","empid":4525670458124580496,"menuStatus":0,"orderIndex":14,"id":"14"},{"menuName":"产品","empid":4525670458124580496,"menuStatus":0,"orderIndex":15,"id":"15"}]</script> 
+  <script>
+TEAMS.menuCrmContext="/crms";
+TEAMS.runMode="production";
+TEAMS.version="1f6c37dde395eb63024a38bc63648cdd";
+</script> 
+  <script><!-- 自定义全局缓存 -->
+TEAMS.ownCache = {};
+</script> 
+  <script>
+seajs.config({base:"./js",preload:["eteams.js?v=1f6c37dde395eb63024a38bc63648cdd"],charset:"utf-8",debug:!1}),seajs.use("teams/core/main");  
+</script> 
+  <div class="smwx-box" id="smwx_box">
+   <div class="smwx-list hide" style="">
+    <div class="smwx-list-header clearfix">
+     <div class="opt">
+      <a class="smwx-list-ctrl-size"><i class="icon-minus-thin"></i></a>
+     </div>
+     <div class="smwx-list-search">
+      <i class="icon-search"></i>
+      <input type="text" placeholder="搜索" class="form-control suggestion" />
+     </div>
+     <ul class="tab">
+      <li><a data-entity="user">同事</a></li>
+      <li><a data-entity="channel">群组</a></li>
+      <li><a  data-entity="recent" class="active">最近</a></li>
+     </ul>
+    </div>
+    <div height="416" class="smwx-list-con scrollwrapper mCustomScrollbar _mCS_2 mCS_no_scrollbar" id="smwx-list-con" style="height: 416px;">
+     <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_2" tabindex="0">
+      <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" id="mCSB_2_container">
+       <div class="loading_small hide">
+        <span>正在加载，请稍后...</span>
+       </div>
+       <div class="smwx-list-search-result hide" id="smwx-list-search-result-query">
+        <div class="chat-member-list"></div>
+       </div>
+       <div class="smwx-list-search-result" id="smwx-list-search-result-all"></div>
+       <div class="smwx-list-search-result hide" id="smwx-list-search-result-channel"></div>
+       <div class="smwx-list-search-result" id="smwx-list-search-result-recent">
+        <div class="chat-member-list">
+         <div data-entity="employee" class="chat-member" id="10000">
+          <div class="avatar">
+           <img src="images/service.png" alt="avatar" />
+          </div>
+          <span class="name">eteams服务号</span>
+          <time></time>
+         </div>
+        </div>
+       </div>
+       <div pageno="2" class="members-more j_members-more hide">
+        更多...
+       </div>
+       <div class="members-more j_recent_more hide">
+        更多...
+       </div>
+      </div>
+      <div class="mCSB_scrollTools mCSB_2_scrollbar mCS-darkblue mCSB_scrollTools_vertical" id="mCSB_2_scrollbar_vertical" style="display: none;">
+       <div class="mCSB_draggerContainer">
+        <div oncontextmenu="return false;" style="position: absolute; min-height: 30px; top: 0px;" class="mCSB_dragger" id="mCSB_2_dragger_vertical">
+         <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+        </div>
+        <div class="mCSB_draggerRail"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="smwx-a-invite invite-toggle">
+     <i class="icon-plus-thin"></i>
+     <a>邀请同事</a>
+    </div>
+    <div class="hide channel-link-clone">
+     <div data-entity="channel" class="chat-member" id="channel-link-clone">
+      <div class="avatar">
+       <img src="images/group.png" alt="avatar" />
+      </div>
+      <span class="name"></span>
+      <time></time>
+     </div>
+    </div>
+    <div class="hide">
+     <div data-entity="employee" class="chat-member" id="employee-clone">
+      <div class="avatar">
+       <img src="images/avatar.png" alt="avatar" />
+      </div>
+      <span class="name"></span>
+      <time></time>
+     </div>
+     <div id="blogmessage-clone" class="smwx-mes-view">
+      <div class="smwx-mes-view-items router">
+       <span class="title"></span>
+       <span class="count badge badge-warning pull-right">8</span>
+      </div>
+     </div>
+    </div>
+    <div class="hide" id="members-pinyin">
+     <div id="list-history#" class="pinyin-container">
+      <span class="pinyin">#</span>
+      <div class="chat-member-list"></div>
+     </div>
+    </div>
+    <div id="all-employee-service" class="pinyin-container hide">
+     <span class="pinyin"></span>
+     <div class="chat-member-list">
+      <div id="10000" class="chat-member">
+       <div class="avatar">
+        <img src="images/service.png" alt="avatar" />
+       </div>
+       <span class="name">eteams服务号</span>
+      </div>
+     </div>
+    </div>
+    <div class="hide">
+     <div class="smwx-invite-tip text-center c-999 fs-12" id="invite-tip-clone">
+      团队人员少，请邀请同事加入协作吧！
+      <div class="mt-10">
+       <a class="invite-toggle btn btn-danger btn-sm">邀请同事加入</a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="smwx-chat hide">
+    <div class="smwx-chat-lf" id="leftChatList">
+     <div marginbottom="" class="smwx-chat-scr-con j_chatlistScr scrollwrapper" style="height: 694px;">
+      <ul></ul>
+     </div>
+    </div>
+    <div class="hide" id="chat-left-list-clone">
+     <li><a class="j_leftChatOne"></a><span class="smwx-chat-cur-close">&times;</span></li>
+    </div>
+    <div class="smwx-chat-rt">
+     <div class="smwx-chat-header">
+      <div class="chat-name"></div>
+      <div class="opt">
+       <a class="smwx-mini-ctrl-size"><i class="icon-minus-thin"></i></a>
+       <a class="smwx-mini-ctrl-close"><i class="icon-plus-thin"></i></a>
+      </div>
+      <div class="addmember-layer j_memberLayer">
+       <div auto-scroll="yes" class="j_memberLayerScr">
+        <div class="inner">
+         <ul>
+          <div id="channel-member-top"></div>
+          <div>
+           <li class="add"><a data-multi="true" data-entity="employee" class="add-member selector-toggle" title="添加成员" id="mini-new-channel"><i class="icon-plus-thin"></i></a></li>
+          </div>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div height="342" class="smwx-chat-content w-full j_chatConScr  scrollwrapper" id="smwx-chat-top" style="height: 342px;">
+      <div id="message-list-div"></div>
+      <div class="chat-message-list" id="message-list-div-clone"></div>
+     </div>
+     <div class="chat-editor">
+      <div class="tool-bar j_minichat_tool" style="position: relative;">
+       <div class="a-tools fl">
+        <a data-placement="top" data-toggle="tooltip" title="" data-original-title="点击添加表情" href="javascript:void(0)" class="chat-emoji"><i class="icon-smiley"></i></a>
+        <a class="graph a-pic" title="" data-placement="top" data-toggle="tooltip" id="chat-image-mini" style="position: relative; z-index: 0;" data-original-title="请选择图片"><i class="icon-image2"></i></a>
+        <a class="graph a-attach" title="" data-placement="top" data-toggle="tooltip" id="chat-attachment" style="position: relative; z-index: 0;" data-original-title="请选择附件"><i class="icon-paperclip"></i></a>
+       </div>
+       <a class="a-his chat-history-toggle fr" id="history-chat"><i class="icon-history icoinline"></i>聊天记录</a>
+       <div id="p1acl5jaai17a3134kcv21rkj1d570_html5_container" style="position: absolute; background: transparent none repeat scroll 0% 0%; width: 0px; height: 0px; overflow: hidden; z-index: -1; opacity: 0; top: 0px; left: 0px;" class="plupload html5">
+        <input type="file" multiple="multiple" accept="" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" id="p1acl5jaai17a3134kcv21rkj1d570_html5" />
+       </div>
+       <div id="p1acl5jaal1u8jcg11b9n5471bc63_html5_container" style="position: absolute; background: transparent none repeat scroll 0% 0%; width: 0px; height: 0px; overflow: hidden; z-index: -1; opacity: 0; top: 0px; left: 0px;" class="plupload html5">
+        <input type="file" multiple="multiple" accept="" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" id="p1acl5jaal1u8jcg11b9n5471bc63_html5" />
+       </div>
+      </div>
+      <div class="content">
+       <textarea class="area w-full" id="message-textarea"></textarea>
+      </div>
+      <div class="action-bar j_actionbar">
+       <div class="fl">
+        <span class="j_key-tip key-tip c-666"><i class="icon-exclamation-sign icoinline"></i>按Ctrl+Enter键发送</span>
+       </div>
+       <ul class="toolkit-list send-btns fr">
+        <li class="toolkit-item dropdown-arrow fr">
+         <div class="btn-group dropdown dropdown-menu-toggle">
+          <a class="dropdown-toggle btn btn-sm btn-primary"><i class="icon-angle-down"></i></a>
+          <ul data-type="CtrlEnter" class="dropdown-menu dropdown-menu-right border-dropdown j_sendType_menu" style="">
+           <li class="j_sendType_li" data-type="Enter"><a class="sendType"><i class="icon-checkmark"></i><span>按Enter发送</span></a></li>
+           <li class="j_sendType_li active" data-type="CtrlEnter"><a class="sendType"><i class="icon-checkmark"></i><span>按Ctrl+Enter发送</span></a></li>
+          </ul>
+         </div></li>
+        <li class="toolkit-item fr mr-0 dropdown-arrow-pre"><a class="btn btn-sm w-60 btn-primary j_btn-send">发送</a></li>
+       </ul>
+       <span class="limit-tip c-999 fr mr-10" id="limitTip">还可以输入1000字</span>
+      </div>
+     </div>
+    </div>
+    <div class="hide" id="channel-member-top-clone">
+     <li class="usercard-toggle" id=""><img src="images/" data-original-title="" data-placement="top" data-toggle="tooltip" /><p class="j_name ellipsis"></p></li>
+    </div>
+    <div class="chat-message hide" id="chat-message-clone">
+     <div class="avatar">
+      <img style="cursor:pointer;" class="usercard-toggle" src="images/avatar.png" />
+     </div>
+     <div class="chat-content">
+      <div style="cursor:pointer;" class="name usercard-toggle"></div>
+      <div class="bubble break">
+       内容
+      </div>
+      <div class="chat-time">
+       <i class="icon-time mr-3"></i>
+       <time>17:32:28</time>
+      </div>
+     </div>
+    </div>
+    <div class="date-divider date-line-clone hide">
+     <div class="line"></div>
+     <span></span>
+    </div>
+   </div>
+   <div class="smwx-mini-bar">
+    <div class="smwx-mini-list-trigger">
+     <i class="icon-comments"></i>企业微信
+     <span class="smwx-msg-number"></span>
+    </div>
+    <div class="smwx-mini-chat-trigger hide">
+     <span class="smwx-mini-text-pre">正在与</span>
+     <span class="smwx-mini-name"></span>
+     <span class="smwx-mini-text-next">的聊天中</span>
+    </div>
+   </div>
+  </div>
+  <textarea style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; padding: 0px; box-sizing: content-box; word-wrap: break-word; height: 0px ! important; min-height: 0px ! important; overflow: hidden; transition: none 0s ease 0s ; font-family: sans-serif; font-size: 16px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 24px; width: 316px;" tabindex="-1" class="autosizejs"></textarea>
+  <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;">
+   <object height="100%" width="100%" data="js/clipboard.swf?noCache=1456704437106" type="application/x-shockwave-flash" name="global-zeroclipboard-flash-bridge" id="global-zeroclipboard-flash-bridge"><param value="sameDomain" name="allowScriptAccess"></param><param value="all" name="allowNetworking"></param><param value="false" name="menu"></param><param value="transparent" name="wmode"></param><param value="trustedOrigins=www.eteams.cn%2C%2F%2Fwww.eteams.cn%2Chttps%3A%2F%2Fwww.eteams.cn&amp;swfObjectId=global-zeroclipboard-flash-bridge" name="flashvars"></param></object>
+  </div>
+ </body>
+</html>
